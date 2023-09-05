@@ -1,0 +1,2473 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FEECC873-C4E9-4B67-95D8-9F3D23530C03}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Audit_Legends</RootNamespace>
+    <AssemblyName>Audit Legends</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <ApplicationInsightsResourceId />
+    <Use64BitIISExpress />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.0.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.0.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.0.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.0.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.0.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.0.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=3.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Practices.EnterpriseLibrary.Common.dll.3.1.0\lib\2.0\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=3.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Practices.EnterpriseLibrary.Data.dll.3.1.0\lib\2.0\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.SemanticLogging.Etw">
+      <HintPath>..\..\..\..\..\..\..\Microsoft.Practices.EnterpriseLibrary.SemanticLogging.Etw.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Validation, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Practices.EnterpriseLibrary.Validation.4.0.30319\lib\net\Microsoft.Practices.EnterpriseLibrary.Validation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Validation.Integration.WCF, Version=3.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Practices.ObjectBuilder, Version=1.0.51206.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Practices.ObjectBuilder.dll.3.1.0\lib\2.0\Microsoft.Practices.ObjectBuilder.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DataVisualization" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1x1_Tracker.aspx" />
+    <Content Include="21_ADXLegend.aspx" />
+    <Content Include="21_ADXLegendGL.aspx" />
+    <Content Include="21_CDTLegend.aspx" />
+    <Content Include="21_ChatLegend.aspx" />
+    <Content Include="21_ChatLegendGL.aspx" />
+    <Content Include="21_CommercialLegend.aspx" />
+    <Content Include="21_DOALegend.aspx" />
+    <Content Include="21_DOALegendGL.aspx" />
+    <Content Include="21_SAPOSLegend.aspx" />
+    <Content Include="21_SoMeLegend.aspx" />
+    <Content Include="21_SoMeLegendGL.aspx" />
+    <Content Include="21_VoiceLegend.aspx" />
+    <Content Include="21_VoiceLegendGL.aspx" />
+    <Content Include="22_DaaSGL.aspx" />
+    <Content Include="22_DaaSLegend.aspx" />
+    <Content Include="22_Email_PSCC_MPS_Legend.aspx" />
+    <Content Include="22_KCI_2Legend.aspx" />
+    <Content Include="22_Omnichannel_Legend.aspx" />
+    <Content Include="22_OnsiteAndPURRLegend.aspx" />
+    <Content Include="22_PDRA_RS_RC_Legend.aspx" />
+    <Content Include="22_Swivel_DaaSGL.aspx" />
+    <Content Include="22_Swivel_DaasLegend.aspx" />
+    <Content Include="22_TCOLegend.aspx" />
+    <Content Include="22_TCOLegendGL.aspx" />
+    <Content Include="ADXLegend.aspx" />
+    <Content Include="AgentLogin.aspx" />
+    <Content Include="AgentLogin.css" />
+    <Content Include="App_Data\MyDB.mdf" />
+    <Content Include="App_Data\MyDB_log.ldf">
+      <DependentUpon>MyDB.mdf</DependentUpon>
+    </Content>
+    <Content Include="Attrition_HiringLogin.aspx" />
+    <Content Include="Attrition_Hiring_SelectOptions.aspx" />
+    <Content Include="Attrition_ManagerLogin.aspx" />
+    <Content Include="Attrition_Mgr_SelectOptions.aspx" />
+    <Content Include="AuditFeedbackForm.aspx" />
+    <Content Include="AuditFeedbackFormADX.aspx" />
+    <Content Include="AuditFeedbackFormCDT.aspx" />
+    <Content Include="AuditFeedbackFormChat.aspx" />
+    <Content Include="AuditFeedbackFormDaaS.aspx" />
+    <Content Include="AuditFeedbackFormDOA.aspx" />
+    <Content Include="AuditFeedbackFormKCI.aspx" />
+    <Content Include="AuditFeedbackFormMPSEmail.aspx" />
+    <Content Include="AuditFeedbackFormOmnichannel.aspx" />
+    <Content Include="AuditFeedbackFormOnsitePURR.aspx" />
+    <Content Include="AuditFeedbackFormPDRA_RS_RC.aspx" />
+    <Content Include="AuditFeedbackFormSoMe.aspx" />
+    <Content Include="AuditFeedbackFormSwivel.aspx" />
+    <Content Include="AuditFeedbackFormTCO.aspx" />
+    <Content Include="AuditFeedbackFormTOC.aspx" />
+    <Content Include="AuditFeedbackFormVoice.aspx" />
+    <Content Include="AuditFormChatLegendComm.aspx" />
+    <Content Include="AuditFormChatLegendComm.css" />
+    <Content Include="AuditFormVoiceLegendComm.js" />
+    <Content Include="AuditSheetADXQA.aspx" />
+    <Content Include="AuditSheetCDTQA.aspx" />
+    <Content Include="AuditSheetChatQA.aspx" />
+    <Content Include="AuditSheetCommQA.aspx" />
+    <Content Include="AuditSheetCommUser.aspx" />
+    <Content Include="AuditSheetDaaSQA.aspx" />
+    <Content Include="AuditSheetDOAQA.aspx" />
+    <Content Include="AuditSheetKCIQA.aspx" />
+    <Content Include="AuditSheetMgrFY21ADX.aspx" />
+    <Content Include="AuditSheetMgrFY21CDT.aspx" />
+    <Content Include="AuditSheetMgrFY21Chat.aspx" />
+    <Content Include="AuditSheetMgrFY21DOA.aspx" />
+    <Content Include="AuditSheetMgrFY21SAPOS.aspx" />
+    <Content Include="AuditSheetMgrFY21SoMe.aspx" />
+    <Content Include="AuditSheetMgrFY21Voice.aspx" />
+    <Content Include="AuditSheetMgrFY22DaaS.aspx" />
+    <Content Include="AuditSheetMgrFY22KCI.aspx" />
+    <Content Include="AuditSheetMgrFY22MPSEmail.aspx" />
+    <Content Include="AuditSheetMgrFY22Omnichannel.aspx" />
+    <Content Include="AuditSheetMgrFY22OnsitePURR.aspx" />
+    <Content Include="AuditSheetMgrFY22PDRA_RS_RC.aspx" />
+    <Content Include="AuditSheetMgrFY22Swivel.aspx" />
+    <Content Include="AuditSheetMgrFY22TCO.aspx" />
+    <Content Include="AuditSheetMgrTOC.aspx" />
+    <Content Include="AuditSheetMPSEmailQA.aspx" />
+    <Content Include="AuditSheetOmnichannelQA.aspx" />
+    <Content Include="AuditSheetOnsitePURRQA.aspx" />
+    <Content Include="AuditSheetPDRA_RS_RCQA.aspx" />
+    <Content Include="AuditSheetQA.aspx" />
+    <Content Include="AuditSheetQACEM.aspx" />
+    <Content Include="AuditSheetQACO.aspx" />
+    <Content Include="AuditSheetQAForums.aspx" />
+    <Content Include="AuditSheetQARR.aspx" />
+    <Content Include="AuditSheetQASF.aspx" />
+    <Content Include="AuditSheetQASoMe.aspx" />
+    <Content Include="AuditSheetQA_ADX.aspx" />
+    <Content Include="AuditSheetQA_TOC.aspx" />
+    <Content Include="AuditSheetSAPOSQA.aspx" />
+    <Content Include="AuditSheetSoMeQA.aspx" />
+    <Content Include="AuditSheetSwivelQA.aspx" />
+    <Content Include="AuditSheetTCOQA.aspx" />
+    <Content Include="AuditSheetTL.aspx" />
+    <Content Include="AuditSheetTLADX.aspx" />
+    <Content Include="AuditSheetTLCEM.aspx" />
+    <Content Include="AuditSheetTLCO.aspx" />
+    <Content Include="AuditSheetTLComm.aspx" />
+    <Content Include="AuditSheetTLForums.aspx" />
+    <Content Include="AuditSheetTLRR.aspx" />
+    <Content Include="AuditSheetTLSF.aspx" />
+    <Content Include="AuditSheetTLSoMe.aspx" />
+    <Content Include="AuditSheetTLTOC.aspx" />
+    <Content Include="AuditSheetUser.aspx" />
+    <Content Include="AuditSheetUser.css" />
+    <Content Include="AuditSheetUserADX.aspx" />
+    <Content Include="AuditSheetUserCEM.aspx" />
+    <Content Include="AuditSheetUserCO.aspx" />
+    <Content Include="AuditSheetUserForums.aspx" />
+    <Content Include="AuditSheetUserFY21ADX.aspx" />
+    <Content Include="AuditSheetUserFY21CDT.aspx" />
+    <Content Include="AuditSheetUserFY21Chat.aspx" />
+    <Content Include="AuditSheetUserFY21DOA.aspx" />
+    <Content Include="AuditSheetUserFY21SAPOS.aspx" />
+    <Content Include="AuditSheetUserFY21SoMe.aspx" />
+    <Content Include="AuditSheetUserFY21Voice.aspx" />
+    <Content Include="AuditSheetUserFY22DaaS.aspx" />
+    <Content Include="AuditSheetUserFY22KCI.aspx" />
+    <Content Include="AuditSheetUserFY22MPSEmail.aspx" />
+    <Content Include="AuditSheetUserFY22Omnichannel.aspx" />
+    <Content Include="AuditSheetUserFY22OnsitePURR.aspx" />
+    <Content Include="AuditSheetUserFY22PDRA_RS_RC.aspx" />
+    <Content Include="AuditSheetUserFY22Swivel.aspx" />
+    <Content Include="AuditSheetUserFY22TCO.aspx" />
+    <Content Include="AuditSheetUserRR.aspx" />
+    <Content Include="AuditSheetUserSF.aspx" />
+    <Content Include="AuditSheetUserSoMe.aspx" />
+    <Content Include="AuditSheetUserTOC.aspx" />
+    <Content Include="AuditSheetVoiceQA.aspx" />
+    <Content Include="CEMLegend.aspx" />
+    <Content Include="ChangePassword.aspx" />
+    <Content Include="ChangePassword.css" />
+    <Content Include="CoreOpsLegend.aspx" />
+    <Content Include="DataUploadNH.aspx" />
+    <Content Include="EditExitForm.aspx" />
+    <Content Include="EditExitFormMgr.aspx" />
+    <Content Include="ExitInterview_Dashboard.aspx" />
+    <Content Include="Exit_Form.aspx" />
+    <Content Include="Exit_Form.css" />
+    <Content Include="Exit_Mgr_Dashboard.aspx" />
+    <Content Include="Hiring_AttritionForm.aspx" />
+    <Content Include="Hiring_HiringDashboard.aspx" />
+    <Content Include="Hiring_HiringTeamView.aspx" />
+    <Content Include="Hiring_ManagerDashboard.aspx" />
+    <Content Include="Hiring_ManagerView.aspx" />
+    <Content Include="Hiring_ProfileCreationDashboard.aspx" />
+    <Content Include="Hiring_ScoringSheet.aspx" />
+    <Content Include="Hiring_TrainingDashboard.aspx" />
+    <Content Include="Hiring_TrainingTeamView.aspx" />
+    <Content Include="Home.aspx" />
+    <Content Include="Homepage.css" />
+    <Content Include="HWAuditSheetQA.aspx" />
+    <Content Include="HWAuditSheetTL.aspx" />
+    <Content Include="HWAuditSheetUser.aspx" />
+    <Content Include="HWAuditSheetUser.css" />
+    <Content Include="HygieneCheckEditQA.aspx" />
+    <Content Include="HygieneCheckQA.aspx" />
+    <Content Include="HygieneCheckUser.aspx" />
+    <Content Include="Hygiene_Check.aspx" />
+    <Content Include="Hygiene_CheckUser.aspx" />
+    <Content Include="Images\3.jpg" />
+    <Content Include="Images\ChangePassword.jpg" />
+    <Content Include="Images\Front-bg.jpg" />
+    <Content Include="Images\Front-bg1.jpg" />
+    <Content Include="Images\Front-bgd-logo.jpg" />
+    <Content Include="Images\Front-bgd.jpg" />
+    <Content Include="Images\guidelines.jpg" />
+    <Content Include="Images\hd-plain-bg.jpg" />
+    <Content Include="Images\HP BG image.png" />
+    <Content Include="Images\HP Login.jpg" />
+    <Content Include="Images\HP logoblack.png" />
+    <Content Include="Images\HP logoblu.png" />
+    <Content Include="Images\hp_logo_white.png" />
+    <Content Include="Images\LegendSelect.jpg" />
+    <Content Include="Images\LegendSelectbg.jpg" />
+    <Content Include="Images\light-bg.jpg" />
+    <Content Include="LegendHW.aspx" />
+    <Content Include="LegendHW.css" />
+    <Content Include="LegendSelect.aspx" />
+    <Content Include="LegendSelect.css" />
+    <Content Include="LegendSelectAgent.aspx" />
+    <Content Include="LegendSelectAgent.css" />
+    <Content Include="LegendSelectMgr.aspx" />
+    <Content Include="LegendSelectMgr.css" />
+    <Content Include="LegendSelectTL.aspx" />
+    <Content Include="MgrDashboardADX.aspx" />
+    <Content Include="MgrDashboardCDT.aspx" />
+    <Content Include="MgrDashboardChat.aspx" />
+    <Content Include="MgrDashboardDaaS.aspx" />
+    <Content Include="MgrDashboardDOA.aspx" />
+    <Content Include="MgrDashboardKCI.aspx" />
+    <Content Include="MgrDashboardMPSEmail.aspx" />
+    <Content Include="MgrDashboardOmnichannel.aspx" />
+    <Content Include="MgrDashboardOnsitePURR.aspx" />
+    <Content Include="MgrDashboardPDRA_RS_RC.aspx" />
+    <Content Include="MgrDashboardSAPOS.aspx" />
+    <Content Include="MgrDashboardSoMe.aspx" />
+    <Content Include="MgrDashboardSwivel.aspx" />
+    <Content Include="MgrDashboardTCO.aspx" />
+    <Content Include="MgrDashboardTOC.aspx" />
+    <Content Include="MgrDashboardVoice.aspx" />
+    <Content Include="MgrLogin.aspx" />
+    <Content Include="MgrLogin.css" />
+    <Content Include="Mgr_Dashboard.aspx" />
+    <Content Include="OL_Login.aspx" />
+    <Content Include="OL_View.aspx" />
+    <Content Include="OM_Login.aspx" />
+    <Content Include="OM_View.aspx" />
+    <Content Include="PersonaLegendComm.aspx" />
+    <Content Include="ProfileDetailForm.aspx" />
+    <Content Include="ProfileDetailForm_Hiring.aspx" />
+    <Content Include="QADashboard.aspx" />
+    <Content Include="QADashboardADX.aspx" />
+    <Content Include="QADashboardCEM.aspx" />
+    <Content Include="QADashboardCO.aspx" />
+    <Content Include="QADashboardComm.aspx" />
+    <Content Include="QADashboardForums.aspx" />
+    <Content Include="QADashboardFY21ADXLegend.aspx" />
+    <Content Include="QADashboardFY21CDTLegend.aspx" />
+    <Content Include="QADashboardFY21ChatLegend.aspx" />
+    <Content Include="QADashboardFY21DOALegend.aspx" />
+    <Content Include="QADashboardFY21Legend.aspx" />
+    <Content Include="QADashboardFY21SAPOSLegend.aspx" />
+    <Content Include="QADashboardFY21SoMeLegend.aspx" />
+    <Content Include="QADashboardFY21VoiceLegend.aspx" />
+    <Content Include="QADashboardFY22DaaSLegend.aspx" />
+    <Content Include="QADashboardFY22KCILegend.aspx" />
+    <Content Include="QADashboardFY22MPSEmailLegend.aspx" />
+    <Content Include="QADashboardFY22OmnichannelLegend.aspx" />
+    <Content Include="QADashboardFY22OnsitePURRLegend.aspx" />
+    <Content Include="QADashboardFY22PDRA_RS_RCLegend.aspx" />
+    <Content Include="QADashboardFY22SwivelLegend.aspx" />
+    <Content Include="QADashboardFY22TCOLegend.aspx" />
+    <Content Include="QADashboardHW.aspx" />
+    <Content Include="QADashboardHygieneCheck.aspx" />
+    <Content Include="QADashboardRR.aspx" />
+    <Content Include="QADashboardSF.aspx" />
+    <Content Include="QADashboardSoMe.aspx" />
+    <Content Include="QADashboardTOC.aspx" />
+    <Content Include="QALogin.aspx" />
+    <Content Include="QALogin.css" />
+    <Content Include="packages.config" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PersonaVoiceLegend.aspx" />
+    <Content Include="PersonaVoiceLegend.css" />
+    <Content Include="QATrendViewVoiceLegend.aspx" />
+    <Content Include="RioRanchoLegend.aspx" />
+    <Content Include="scripts\GoogleChart.js" />
+    <Content Include="Service References\Application Insights\ConnectedService.json" />
+    <Content Include="Download\RepairLegendReport.xlsx" />
+    <Content Include="Download\SoMe FbTw Report.xlsx" />
+    <Content Include="Download\SoMe Forums Report.xlsx" />
+    <Content Include="Download\RioRanchoLegendReport.xlsx" />
+    <Content Include="Download\CEM_Legend_Report.xlsx" />
+    <Content Include="Download\RepairLegendV2Report.xlsx" />
+    <Content Include="Download\ADXLegendReport.xlsx" />
+    <Content Include="Download\SmartFriend_Report.xlsx" />
+    <Content Include="Download\TOC_Legend_Report.xlsx" />
+    <Content Include="Download\PremiumConsumerReport.xlsx" />
+    <Content Include="Download\CommercialLegendReport.xlsx" />
+    <Content Include="Download\MobilityLegendReport.xlsx" />
+    <Content Include="Download\FY23 ADX Report.xlsx" />
+    <Content Include="Download\FY23 Chat Report.xlsx" />
+    <Content Include="Download\FY23 SoMe Report.xlsx" />
+    <Content Include="Download\FY23 Voice Report.xlsx" />
+    <Content Include="Download\FY23 CDT Report.xlsx" />
+    <Content Include="Download\FY23 DOA Report.xlsx" />
+    <Content Include="Download\FY23 SAPOS Report.xlsx" />
+    <Content Include="Download\FY23 KCI Report.xlsx" />
+    <Content Include="Download\FY23 Onsite and PURR Report.xlsx" />
+    <Content Include="Download\FY23 TCO Report.xlsx" />
+    <Content Include="Download\FY23 PDRA RS RC Report.xlsx" />
+    <Content Include="Download\Hiring\Hiring_ProfileDetailsDump.xlsx" />
+    <Content Include="Download\FY23 Swivel Daas Report.xlsx" />
+    <Content Include="Download\FY23 DaaS Report.xlsx" />
+    <Content Include="Download\FY23 Omnichannel Report.xlsx" />
+    <Content Include="Download\FY23 MPS Email PSCC Report.xlsx" />
+    <Content Include="Download\FY22 Hygiene Check Report.xlsx" />
+    <None Include="Properties\PublishProfiles\Quality Audit.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AuditFormVoiceLegendComm.css" />
+    <Content Include="scripts\ai.0.22.9-build00167.js" />
+    <Content Include="scripts\ai.0.22.9-build00167.min.js" />
+    <Content Include="SmartFriendLegend.aspx" />
+    <Content Include="SoMeFbTwLegend.aspx" />
+    <Content Include="SoMeForumLegend.aspx" />
+    <Content Include="Testing.aspx" />
+    <Content Include="TLDashboard.aspx" />
+    <Content Include="TLDashboard.css" />
+    <Content Include="TLDashboardComm.aspx" />
+    <Content Include="TLDashboardCoreOps.aspx" />
+    <Content Include="TLDashboardForum.aspx" />
+    <Content Include="TLDashboardHW.aspx" />
+    <Content Include="TLDashboardHW.css" />
+    <Content Include="TLDashboardRioRancho.aspx" />
+    <Content Include="TLDashboardSoMe.aspx" />
+    <Content Include="TLLogin.aspx" />
+    <Content Include="TL_Dashboard.aspx" />
+    <Content Include="TL_DashboardADX.aspx" />
+    <Content Include="TL_DashboardCEM.aspx" />
+    <Content Include="TL_DashboardComm.aspx" />
+    <Content Include="TL_DashboardCoreOps.aspx" />
+    <Content Include="TL_DashboardForum.aspx" />
+    <Content Include="TL_DashboardHW.aspx" />
+    <Content Include="TL_DashboardRioRancho.aspx" />
+    <Content Include="TL_DashboardSF.aspx" />
+    <Content Include="TL_DashboardSoMe.aspx" />
+    <Content Include="TL_DashboardTOC.aspx" />
+    <Content Include="TOC_Legend.aspx" />
+    <Content Include="TOC_LegendGL.aspx" />
+    <Content Include="TrainerLogin.aspx" />
+    <Content Include="TrainingDashboardNH.aspx" />
+    <Content Include="TrainingSheetNH.aspx" />
+    <Content Include="TrainingType1.aspx" />
+    <Content Include="TrainingType2.aspx" />
+    <Content Include="TypeSelect.aspx" />
+    <Content Include="UniversalConsLegend.aspx" />
+    <Content Include="UserDashboard.aspx" />
+    <Content Include="UserDashboard.css" />
+    <Content Include="UserDashboardADX.aspx" />
+    <Content Include="UserDashboardCEM.aspx" />
+    <Content Include="UserDashboardCO.aspx" />
+    <Content Include="UserDashboardComm.aspx" />
+    <Content Include="UserDashboardForums.aspx" />
+    <Content Include="UserDashboardFY21ADX.aspx" />
+    <Content Include="UserDashboardFY21CDT.aspx" />
+    <Content Include="UserDashboardFY21Chat.aspx" />
+    <Content Include="UserDashboardFY21DOA.aspx" />
+    <Content Include="UserDashboardFY21SAPOS.aspx" />
+    <Content Include="UserDashboardFY21SoMe.aspx" />
+    <Content Include="UserDashboardFY21Voice.aspx" />
+    <Content Include="UserDashboardFY22DaaS.aspx" />
+    <Content Include="UserDashboardFY22KCI.aspx" />
+    <Content Include="UserDashboardFY22MPSEmail.aspx" />
+    <Content Include="UserDashboardFY22Omnichannel.aspx" />
+    <Content Include="UserDashboardFY22OnsitePURRLegend.aspx" />
+    <Content Include="UserDashboardFY22PDRA_RS_RC.aspx" />
+    <Content Include="UserDashboardFY22Swivel.aspx" />
+    <Content Include="UserDashboardFY22TCO.aspx" />
+    <Content Include="UserDashboardHW.aspx" />
+    <Content Include="UserDashboardHygieneCheck.aspx" />
+    <Content Include="UserDashboardRR.aspx" />
+    <Content Include="UserDashboardSF.aspx" />
+    <Content Include="UserDashboardSoMe.aspx" />
+    <Content Include="UserDashboardTOC.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="1x1_Tracker.aspx.cs">
+      <DependentUpon>1x1_Tracker.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="1x1_Tracker.aspx.designer.cs">
+      <DependentUpon>1x1_Tracker.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="21_ADXLegend.aspx.cs">
+      <DependentUpon>21_ADXLegend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="21_ADXLegend.aspx.designer.cs">
+      <DependentUpon>21_ADXLegend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="21_ADXLegendGL.aspx.cs">
+      <DependentUpon>21_ADXLegendGL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="21_ADXLegendGL.aspx.designer.cs">
+      <DependentUpon>21_ADXLegendGL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="21_CDTLegend.aspx.cs">
+      <DependentUpon>21_CDTLegend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="21_CDTLegend.aspx.designer.cs">
+      <DependentUpon>21_CDTLegend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="21_ChatLegend.aspx.cs">
+      <DependentUpon>21_ChatLegend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="21_ChatLegend.aspx.designer.cs">
+      <DependentUpon>21_ChatLegend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="21_ChatLegendGL.aspx.cs">
+      <DependentUpon>21_ChatLegendGL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="21_ChatLegendGL.aspx.designer.cs">
+      <DependentUpon>21_ChatLegendGL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="21_CommercialLegend.aspx.cs">
+      <DependentUpon>21_CommercialLegend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="21_CommercialLegend.aspx.designer.cs">
+      <DependentUpon>21_CommercialLegend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="21_DOALegend.aspx.cs">
+      <DependentUpon>21_DOALegend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="21_DOALegend.aspx.designer.cs">
+      <DependentUpon>21_DOALegend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="21_DOALegendGL.aspx.cs">
+      <DependentUpon>21_DOALegendGL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="21_DOALegendGL.aspx.designer.cs">
+      <DependentUpon>21_DOALegendGL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="21_SAPOSLegend.aspx.cs">
+      <DependentUpon>21_SAPOSLegend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="21_SAPOSLegend.aspx.designer.cs">
+      <DependentUpon>21_SAPOSLegend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="21_SoMeLegend.aspx.cs">
+      <DependentUpon>21_SoMeLegend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="21_SoMeLegend.aspx.designer.cs">
+      <DependentUpon>21_SoMeLegend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="21_SoMeLegendGL.aspx.cs">
+      <DependentUpon>21_SoMeLegendGL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="21_SoMeLegendGL.aspx.designer.cs">
+      <DependentUpon>21_SoMeLegendGL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="21_VoiceLegend.aspx.cs">
+      <DependentUpon>21_VoiceLegend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="21_VoiceLegend.aspx.designer.cs">
+      <DependentUpon>21_VoiceLegend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="21_VoiceLegendGL.aspx.cs">
+      <DependentUpon>21_VoiceLegendGL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="21_VoiceLegendGL.aspx.designer.cs">
+      <DependentUpon>21_VoiceLegendGL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="22_DaaSGL.aspx.cs">
+      <DependentUpon>22_DaaSGL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="22_DaaSGL.aspx.designer.cs">
+      <DependentUpon>22_DaaSGL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="22_DaaSLegend.aspx.cs">
+      <DependentUpon>22_DaaSLegend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="22_DaaSLegend.aspx.designer.cs">
+      <DependentUpon>22_DaaSLegend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="22_Email_PSCC_MPS_Legend.aspx.cs">
+      <DependentUpon>22_Email_PSCC_MPS_Legend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="22_Email_PSCC_MPS_Legend.aspx.designer.cs">
+      <DependentUpon>22_Email_PSCC_MPS_Legend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="22_KCI_2Legend.aspx.cs">
+      <DependentUpon>22_KCI_2Legend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="22_KCI_2Legend.aspx.designer.cs">
+      <DependentUpon>22_KCI_2Legend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="22_Omnichannel_Legend.aspx.cs">
+      <DependentUpon>22_Omnichannel_Legend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="22_Omnichannel_Legend.aspx.designer.cs">
+      <DependentUpon>22_Omnichannel_Legend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="22_OnsiteAndPURRLegend.aspx.cs">
+      <DependentUpon>22_OnsiteAndPURRLegend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="22_OnsiteAndPURRLegend.aspx.designer.cs">
+      <DependentUpon>22_OnsiteAndPURRLegend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="22_PDRA_RS_RC_Legend.aspx.cs">
+      <DependentUpon>22_PDRA_RS_RC_Legend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="22_PDRA_RS_RC_Legend.aspx.designer.cs">
+      <DependentUpon>22_PDRA_RS_RC_Legend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="22_Swivel_DaaSGL.aspx.cs">
+      <DependentUpon>22_Swivel_DaaSGL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="22_Swivel_DaaSGL.aspx.designer.cs">
+      <DependentUpon>22_Swivel_DaaSGL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="22_Swivel_DaasLegend.aspx.cs">
+      <DependentUpon>22_Swivel_DaasLegend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="22_Swivel_DaasLegend.aspx.designer.cs">
+      <DependentUpon>22_Swivel_DaasLegend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="22_TCOLegend.aspx.cs">
+      <DependentUpon>22_TCOLegend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="22_TCOLegend.aspx.designer.cs">
+      <DependentUpon>22_TCOLegend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="22_TCOLegendGL.aspx.cs">
+      <DependentUpon>22_TCOLegendGL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="22_TCOLegendGL.aspx.designer.cs">
+      <DependentUpon>22_TCOLegendGL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADXLegend.aspx.cs">
+      <DependentUpon>ADXLegend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADXLegend.aspx.designer.cs">
+      <DependentUpon>ADXLegend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AgentLogin.aspx.cs">
+      <DependentUpon>AgentLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentLogin.aspx.designer.cs">
+      <DependentUpon>AgentLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Data\FusionCharts.cs" />
+    <Compile Include="Attrition_HiringLogin.aspx.cs">
+      <DependentUpon>Attrition_HiringLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attrition_HiringLogin.aspx.designer.cs">
+      <DependentUpon>Attrition_HiringLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attrition_Hiring_SelectOptions.aspx.cs">
+      <DependentUpon>Attrition_Hiring_SelectOptions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attrition_Hiring_SelectOptions.aspx.designer.cs">
+      <DependentUpon>Attrition_Hiring_SelectOptions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attrition_ManagerLogin.aspx.cs">
+      <DependentUpon>Attrition_ManagerLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attrition_ManagerLogin.aspx.designer.cs">
+      <DependentUpon>Attrition_ManagerLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Attrition_Mgr_SelectOptions.aspx.cs">
+      <DependentUpon>Attrition_Mgr_SelectOptions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Attrition_Mgr_SelectOptions.aspx.designer.cs">
+      <DependentUpon>Attrition_Mgr_SelectOptions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditFeedbackForm.aspx.cs">
+      <DependentUpon>AuditFeedbackForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditFeedbackForm.aspx.designer.cs">
+      <DependentUpon>AuditFeedbackForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditFeedbackFormADX.aspx.cs">
+      <DependentUpon>AuditFeedbackFormADX.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditFeedbackFormADX.aspx.designer.cs">
+      <DependentUpon>AuditFeedbackFormADX.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditFeedbackFormCDT.aspx.cs">
+      <DependentUpon>AuditFeedbackFormCDT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditFeedbackFormCDT.aspx.designer.cs">
+      <DependentUpon>AuditFeedbackFormCDT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditFeedbackFormChat.aspx.cs">
+      <DependentUpon>AuditFeedbackFormChat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditFeedbackFormChat.aspx.designer.cs">
+      <DependentUpon>AuditFeedbackFormChat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditFeedbackFormDaaS.aspx.cs">
+      <DependentUpon>AuditFeedbackFormDaaS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditFeedbackFormDaaS.aspx.designer.cs">
+      <DependentUpon>AuditFeedbackFormDaaS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditFeedbackFormDOA.aspx.cs">
+      <DependentUpon>AuditFeedbackFormDOA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditFeedbackFormDOA.aspx.designer.cs">
+      <DependentUpon>AuditFeedbackFormDOA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditFeedbackFormKCI.aspx.cs">
+      <DependentUpon>AuditFeedbackFormKCI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditFeedbackFormKCI.aspx.designer.cs">
+      <DependentUpon>AuditFeedbackFormKCI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditFeedbackFormMPSEmail.aspx.cs">
+      <DependentUpon>AuditFeedbackFormMPSEmail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditFeedbackFormMPSEmail.aspx.designer.cs">
+      <DependentUpon>AuditFeedbackFormMPSEmail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditFeedbackFormOmnichannel.aspx.cs">
+      <DependentUpon>AuditFeedbackFormOmnichannel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditFeedbackFormOmnichannel.aspx.designer.cs">
+      <DependentUpon>AuditFeedbackFormOmnichannel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditFeedbackFormOnsitePURR.aspx.cs">
+      <DependentUpon>AuditFeedbackFormOnsitePURR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditFeedbackFormOnsitePURR.aspx.designer.cs">
+      <DependentUpon>AuditFeedbackFormOnsitePURR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditFeedbackFormPDRA_RS_RC.aspx.cs">
+      <DependentUpon>AuditFeedbackFormPDRA_RS_RC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditFeedbackFormPDRA_RS_RC.aspx.designer.cs">
+      <DependentUpon>AuditFeedbackFormPDRA_RS_RC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditFeedbackFormSoMe.aspx.cs">
+      <DependentUpon>AuditFeedbackFormSoMe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditFeedbackFormSoMe.aspx.designer.cs">
+      <DependentUpon>AuditFeedbackFormSoMe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditFeedbackFormSwivel.aspx.cs">
+      <DependentUpon>AuditFeedbackFormSwivel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditFeedbackFormSwivel.aspx.designer.cs">
+      <DependentUpon>AuditFeedbackFormSwivel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditFeedbackFormTCO.aspx.cs">
+      <DependentUpon>AuditFeedbackFormTCO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditFeedbackFormTCO.aspx.designer.cs">
+      <DependentUpon>AuditFeedbackFormTCO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditFeedbackFormTOC.aspx.cs">
+      <DependentUpon>AuditFeedbackFormTOC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditFeedbackFormTOC.aspx.designer.cs">
+      <DependentUpon>AuditFeedbackFormTOC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditFeedbackFormVoice.aspx.cs">
+      <DependentUpon>AuditFeedbackFormVoice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditFeedbackFormVoice.aspx.designer.cs">
+      <DependentUpon>AuditFeedbackFormVoice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditFormChatLegendComm.aspx.cs">
+      <DependentUpon>AuditFormChatLegendComm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditFormChatLegendComm.aspx.designer.cs">
+      <DependentUpon>AuditFormChatLegendComm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSheetADXQA.aspx.cs">
+      <DependentUpon>AuditSheetADXQA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditSheetADXQA.aspx.designer.cs">
+      <DependentUpon>AuditSheetADXQA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSheetCDTQA.aspx.cs">
+      <DependentUpon>AuditSheetCDTQA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditSheetCDTQA.aspx.designer.cs">
+      <DependentUpon>AuditSheetCDTQA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSheetChatQA.aspx.cs">
+      <DependentUpon>AuditSheetChatQA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditSheetChatQA.aspx.designer.cs">
+      <DependentUpon>AuditSheetChatQA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSheetCommQA.aspx.cs">
+      <DependentUpon>AuditSheetCommQA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditSheetCommQA.aspx.designer.cs">
+      <DependentUpon>AuditSheetCommQA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSheetCommUser.aspx.cs">
+      <DependentUpon>AuditSheetCommUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditSheetCommUser.aspx.designer.cs">
+      <DependentUpon>AuditSheetCommUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSheetDaaSQA.aspx.cs">
+      <DependentUpon>AuditSheetDaaSQA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditSheetDaaSQA.aspx.designer.cs">
+      <DependentUpon>AuditSheetDaaSQA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSheetDOAQA.aspx.cs">
+      <DependentUpon>AuditSheetDOAQA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditSheetDOAQA.aspx.designer.cs">
+      <DependentUpon>AuditSheetDOAQA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSheetKCIQA.aspx.cs">
+      <DependentUpon>AuditSheetKCIQA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditSheetKCIQA.aspx.designer.cs">
+      <DependentUpon>AuditSheetKCIQA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSheetMgrFY21ADX.aspx.cs">
+      <DependentUpon>AuditSheetMgrFY21ADX.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditSheetMgrFY21ADX.aspx.designer.cs">
+      <DependentUpon>AuditSheetMgrFY21ADX.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSheetMgrFY21CDT.aspx.cs">
+      <DependentUpon>AuditSheetMgrFY21CDT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditSheetMgrFY21CDT.aspx.designer.cs">
+      <DependentUpon>AuditSheetMgrFY21CDT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSheetMgrFY21Chat.aspx.cs">
+      <DependentUpon>AuditSheetMgrFY21Chat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditSheetMgrFY21Chat.aspx.designer.cs">
+      <DependentUpon>AuditSheetMgrFY21Chat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSheetMgrFY21DOA.aspx.cs">
+      <DependentUpon>AuditSheetMgrFY21DOA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditSheetMgrFY21DOA.aspx.designer.cs">
+      <DependentUpon>AuditSheetMgrFY21DOA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSheetMgrFY21SAPOS.aspx.cs">
+      <DependentUpon>AuditSheetMgrFY21SAPOS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditSheetMgrFY21SAPOS.aspx.designer.cs">
+      <DependentUpon>AuditSheetMgrFY21SAPOS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSheetMgrFY21SoMe.aspx.cs">
+      <DependentUpon>AuditSheetMgrFY21SoMe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditSheetMgrFY21SoMe.aspx.designer.cs">
+      <DependentUpon>AuditSheetMgrFY21SoMe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSheetMgrFY21Voice.aspx.cs">
+      <DependentUpon>AuditSheetMgrFY21Voice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditSheetMgrFY21Voice.aspx.designer.cs">
+      <DependentUpon>AuditSheetMgrFY21Voice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSheetMgrFY22DaaS.aspx.cs">
+      <DependentUpon>AuditSheetMgrFY22DaaS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditSheetMgrFY22DaaS.aspx.designer.cs">
+      <DependentUpon>AuditSheetMgrFY22DaaS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSheetMgrFY22KCI.aspx.cs">
+      <DependentUpon>AuditSheetMgrFY22KCI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditSheetMgrFY22KCI.aspx.designer.cs">
+      <DependentUpon>AuditSheetMgrFY22KCI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSheetMgrFY22MPSEmail.aspx.cs">
+      <DependentUpon>AuditSheetMgrFY22MPSEmail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditSheetMgrFY22MPSEmail.aspx.designer.cs">
+      <DependentUpon>AuditSheetMgrFY22MPSEmail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSheetMgrFY22Omnichannel.aspx.cs">
+      <DependentUpon>AuditSheetMgrFY22Omnichannel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditSheetMgrFY22Omnichannel.aspx.designer.cs">
+      <DependentUpon>AuditSheetMgrFY22Omnichannel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSheetMgrFY22OnsitePURR.aspx.cs">
+      <DependentUpon>AuditSheetMgrFY22OnsitePURR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditSheetMgrFY22OnsitePURR.aspx.designer.cs">
+      <DependentUpon>AuditSheetMgrFY22OnsitePURR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSheetMgrFY22PDRA_RS_RC.aspx.cs">
+      <DependentUpon>AuditSheetMgrFY22PDRA_RS_RC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditSheetMgrFY22PDRA_RS_RC.aspx.designer.cs">
+      <DependentUpon>AuditSheetMgrFY22PDRA_RS_RC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSheetMgrFY22Swivel.aspx.cs">
+      <DependentUpon>AuditSheetMgrFY22Swivel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditSheetMgrFY22Swivel.aspx.designer.cs">
+      <DependentUpon>AuditSheetMgrFY22Swivel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSheetMgrFY22TCO.aspx.cs">
+      <DependentUpon>AuditSheetMgrFY22TCO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditSheetMgrFY22TCO.aspx.designer.cs">
+      <DependentUpon>AuditSheetMgrFY22TCO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSheetMgrTOC.aspx.cs">
+      <DependentUpon>AuditSheetMgrTOC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditSheetMgrTOC.aspx.designer.cs">
+      <DependentUpon>AuditSheetMgrTOC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSheetMPSEmailQA.aspx.cs">
+      <DependentUpon>AuditSheetMPSEmailQA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditSheetMPSEmailQA.aspx.designer.cs">
+      <DependentUpon>AuditSheetMPSEmailQA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSheetOmnichannelQA.aspx.cs">
+      <DependentUpon>AuditSheetOmnichannelQA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditSheetOmnichannelQA.aspx.designer.cs">
+      <DependentUpon>AuditSheetOmnichannelQA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSheetOnsitePURRQA.aspx.cs">
+      <DependentUpon>AuditSheetOnsitePURRQA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditSheetOnsitePURRQA.aspx.designer.cs">
+      <DependentUpon>AuditSheetOnsitePURRQA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSheetPDRA_RS_RCQA.aspx.cs">
+      <DependentUpon>AuditSheetPDRA_RS_RCQA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditSheetPDRA_RS_RCQA.aspx.designer.cs">
+      <DependentUpon>AuditSheetPDRA_RS_RCQA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSheetQA.aspx.cs">
+      <DependentUpon>AuditSheetQA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditSheetQA.aspx.designer.cs">
+      <DependentUpon>AuditSheetQA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSheetQACEM.aspx.cs">
+      <DependentUpon>AuditSheetQACEM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditSheetQACEM.aspx.designer.cs">
+      <DependentUpon>AuditSheetQACEM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSheetQACO.aspx.cs">
+      <DependentUpon>AuditSheetQACO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditSheetQACO.aspx.designer.cs">
+      <DependentUpon>AuditSheetQACO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSheetQAForums.aspx.cs">
+      <DependentUpon>AuditSheetQAForums.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditSheetQAForums.aspx.designer.cs">
+      <DependentUpon>AuditSheetQAForums.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSheetQARR.aspx.cs">
+      <DependentUpon>AuditSheetQARR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditSheetQARR.aspx.designer.cs">
+      <DependentUpon>AuditSheetQARR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSheetQASF.aspx.cs">
+      <DependentUpon>AuditSheetQASF.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditSheetQASF.aspx.designer.cs">
+      <DependentUpon>AuditSheetQASF.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSheetQASoMe.aspx.cs">
+      <DependentUpon>AuditSheetQASoMe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditSheetQASoMe.aspx.designer.cs">
+      <DependentUpon>AuditSheetQASoMe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSheetQA_ADX.aspx.cs">
+      <DependentUpon>AuditSheetQA_ADX.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditSheetQA_ADX.aspx.designer.cs">
+      <DependentUpon>AuditSheetQA_ADX.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSheetQA_TOC.aspx.cs">
+      <DependentUpon>AuditSheetQA_TOC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditSheetQA_TOC.aspx.designer.cs">
+      <DependentUpon>AuditSheetQA_TOC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSheetSAPOSQA.aspx.cs">
+      <DependentUpon>AuditSheetSAPOSQA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditSheetSAPOSQA.aspx.designer.cs">
+      <DependentUpon>AuditSheetSAPOSQA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSheetSoMeQA.aspx.cs">
+      <DependentUpon>AuditSheetSoMeQA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditSheetSoMeQA.aspx.designer.cs">
+      <DependentUpon>AuditSheetSoMeQA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSheetSwivelQA.aspx.cs">
+      <DependentUpon>AuditSheetSwivelQA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditSheetSwivelQA.aspx.designer.cs">
+      <DependentUpon>AuditSheetSwivelQA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSheetTCOQA.aspx.cs">
+      <DependentUpon>AuditSheetTCOQA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditSheetTCOQA.aspx.designer.cs">
+      <DependentUpon>AuditSheetTCOQA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSheetTL.aspx.cs">
+      <DependentUpon>AuditSheetTL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditSheetTL.aspx.designer.cs">
+      <DependentUpon>AuditSheetTL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSheetTLADX.aspx.cs">
+      <DependentUpon>AuditSheetTLADX.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditSheetTLADX.aspx.designer.cs">
+      <DependentUpon>AuditSheetTLADX.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSheetTLCEM.aspx.cs">
+      <DependentUpon>AuditSheetTLCEM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditSheetTLCEM.aspx.designer.cs">
+      <DependentUpon>AuditSheetTLCEM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSheetTLCO.aspx.cs">
+      <DependentUpon>AuditSheetTLCO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditSheetTLCO.aspx.designer.cs">
+      <DependentUpon>AuditSheetTLCO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSheetTLComm.aspx.cs">
+      <DependentUpon>AuditSheetTLComm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditSheetTLComm.aspx.designer.cs">
+      <DependentUpon>AuditSheetTLComm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSheetTLForums.aspx.cs">
+      <DependentUpon>AuditSheetTLForums.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditSheetTLForums.aspx.designer.cs">
+      <DependentUpon>AuditSheetTLForums.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSheetTLRR.aspx.cs">
+      <DependentUpon>AuditSheetTLRR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditSheetTLRR.aspx.designer.cs">
+      <DependentUpon>AuditSheetTLRR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSheetTLSF.aspx.cs">
+      <DependentUpon>AuditSheetTLSF.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditSheetTLSF.aspx.designer.cs">
+      <DependentUpon>AuditSheetTLSF.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSheetTLSoMe.aspx.cs">
+      <DependentUpon>AuditSheetTLSoMe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditSheetTLSoMe.aspx.designer.cs">
+      <DependentUpon>AuditSheetTLSoMe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSheetTLTOC.aspx.cs">
+      <DependentUpon>AuditSheetTLTOC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditSheetTLTOC.aspx.designer.cs">
+      <DependentUpon>AuditSheetTLTOC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSheetUser.aspx.cs">
+      <DependentUpon>AuditSheetUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditSheetUser.aspx.designer.cs">
+      <DependentUpon>AuditSheetUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSheetUserADX.aspx.cs">
+      <DependentUpon>AuditSheetUserADX.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditSheetUserADX.aspx.designer.cs">
+      <DependentUpon>AuditSheetUserADX.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSheetUserCEM.aspx.cs">
+      <DependentUpon>AuditSheetUserCEM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditSheetUserCEM.aspx.designer.cs">
+      <DependentUpon>AuditSheetUserCEM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSheetUserCO.aspx.cs">
+      <DependentUpon>AuditSheetUserCO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditSheetUserCO.aspx.designer.cs">
+      <DependentUpon>AuditSheetUserCO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSheetUserForums.aspx.cs">
+      <DependentUpon>AuditSheetUserForums.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditSheetUserForums.aspx.designer.cs">
+      <DependentUpon>AuditSheetUserForums.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSheetUserFY21ADX.aspx.cs">
+      <DependentUpon>AuditSheetUserFY21ADX.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditSheetUserFY21ADX.aspx.designer.cs">
+      <DependentUpon>AuditSheetUserFY21ADX.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSheetUserFY21CDT.aspx.cs">
+      <DependentUpon>AuditSheetUserFY21CDT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditSheetUserFY21CDT.aspx.designer.cs">
+      <DependentUpon>AuditSheetUserFY21CDT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSheetUserFY21Chat.aspx.cs">
+      <DependentUpon>AuditSheetUserFY21Chat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditSheetUserFY21Chat.aspx.designer.cs">
+      <DependentUpon>AuditSheetUserFY21Chat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSheetUserFY21DOA.aspx.cs">
+      <DependentUpon>AuditSheetUserFY21DOA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditSheetUserFY21DOA.aspx.designer.cs">
+      <DependentUpon>AuditSheetUserFY21DOA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSheetUserFY21SAPOS.aspx.cs">
+      <DependentUpon>AuditSheetUserFY21SAPOS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditSheetUserFY21SAPOS.aspx.designer.cs">
+      <DependentUpon>AuditSheetUserFY21SAPOS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSheetUserFY21SoMe.aspx.cs">
+      <DependentUpon>AuditSheetUserFY21SoMe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditSheetUserFY21SoMe.aspx.designer.cs">
+      <DependentUpon>AuditSheetUserFY21SoMe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSheetUserFY21Voice.aspx.cs">
+      <DependentUpon>AuditSheetUserFY21Voice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditSheetUserFY21Voice.aspx.designer.cs">
+      <DependentUpon>AuditSheetUserFY21Voice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSheetUserFY22DaaS.aspx.cs">
+      <DependentUpon>AuditSheetUserFY22DaaS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditSheetUserFY22DaaS.aspx.designer.cs">
+      <DependentUpon>AuditSheetUserFY22DaaS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSheetUserFY22KCI.aspx.cs">
+      <DependentUpon>AuditSheetUserFY22KCI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditSheetUserFY22KCI.aspx.designer.cs">
+      <DependentUpon>AuditSheetUserFY22KCI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSheetUserFY22MPSEmail.aspx.cs">
+      <DependentUpon>AuditSheetUserFY22MPSEmail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditSheetUserFY22MPSEmail.aspx.designer.cs">
+      <DependentUpon>AuditSheetUserFY22MPSEmail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSheetUserFY22Omnichannel.aspx.cs">
+      <DependentUpon>AuditSheetUserFY22Omnichannel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditSheetUserFY22Omnichannel.aspx.designer.cs">
+      <DependentUpon>AuditSheetUserFY22Omnichannel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSheetUserFY22OnsitePURR.aspx.cs">
+      <DependentUpon>AuditSheetUserFY22OnsitePURR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditSheetUserFY22OnsitePURR.aspx.designer.cs">
+      <DependentUpon>AuditSheetUserFY22OnsitePURR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSheetUserFY22PDRA_RS_RC.aspx.cs">
+      <DependentUpon>AuditSheetUserFY22PDRA_RS_RC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditSheetUserFY22PDRA_RS_RC.aspx.designer.cs">
+      <DependentUpon>AuditSheetUserFY22PDRA_RS_RC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSheetUserFY22Swivel.aspx.cs">
+      <DependentUpon>AuditSheetUserFY22Swivel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditSheetUserFY22Swivel.aspx.designer.cs">
+      <DependentUpon>AuditSheetUserFY22Swivel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSheetUserFY22TCO.aspx.cs">
+      <DependentUpon>AuditSheetUserFY22TCO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditSheetUserFY22TCO.aspx.designer.cs">
+      <DependentUpon>AuditSheetUserFY22TCO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSheetUserRR.aspx.cs">
+      <DependentUpon>AuditSheetUserRR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditSheetUserRR.aspx.designer.cs">
+      <DependentUpon>AuditSheetUserRR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSheetUserSF.aspx.cs">
+      <DependentUpon>AuditSheetUserSF.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditSheetUserSF.aspx.designer.cs">
+      <DependentUpon>AuditSheetUserSF.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSheetUserSoMe.aspx.cs">
+      <DependentUpon>AuditSheetUserSoMe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditSheetUserSoMe.aspx.designer.cs">
+      <DependentUpon>AuditSheetUserSoMe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSheetUserTOC.aspx.cs">
+      <DependentUpon>AuditSheetUserTOC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditSheetUserTOC.aspx.designer.cs">
+      <DependentUpon>AuditSheetUserTOC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuditSheetVoiceQA.aspx.cs">
+      <DependentUpon>AuditSheetVoiceQA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuditSheetVoiceQA.aspx.designer.cs">
+      <DependentUpon>AuditSheetVoiceQA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CEMLegend.aspx.cs">
+      <DependentUpon>CEMLegend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CEMLegend.aspx.designer.cs">
+      <DependentUpon>CEMLegend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CoreOpsLegend.aspx.cs">
+      <DependentUpon>CoreOpsLegend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CoreOpsLegend.aspx.designer.cs">
+      <DependentUpon>CoreOpsLegend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataUploadNH.aspx.cs">
+      <DependentUpon>DataUploadNH.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataUploadNH.aspx.designer.cs">
+      <DependentUpon>DataUploadNH.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditExitForm.aspx.cs">
+      <DependentUpon>EditExitForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditExitForm.aspx.designer.cs">
+      <DependentUpon>EditExitForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditExitFormMgr.aspx.cs">
+      <DependentUpon>EditExitFormMgr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditExitFormMgr.aspx.designer.cs">
+      <DependentUpon>EditExitFormMgr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExitInterview_Dashboard.aspx.cs">
+      <DependentUpon>ExitInterview_Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExitInterview_Dashboard.aspx.designer.cs">
+      <DependentUpon>ExitInterview_Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Exit_Form.aspx.cs">
+      <DependentUpon>Exit_Form.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Exit_Form.aspx.designer.cs">
+      <DependentUpon>Exit_Form.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Exit_Mgr_Dashboard.aspx.cs">
+      <DependentUpon>Exit_Mgr_Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Exit_Mgr_Dashboard.aspx.designer.cs">
+      <DependentUpon>Exit_Mgr_Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hiring_AttritionForm.aspx.cs">
+      <DependentUpon>Hiring_AttritionForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hiring_AttritionForm.aspx.designer.cs">
+      <DependentUpon>Hiring_AttritionForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hiring_HiringDashboard.aspx.cs">
+      <DependentUpon>Hiring_HiringDashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hiring_HiringDashboard.aspx.designer.cs">
+      <DependentUpon>Hiring_HiringDashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hiring_HiringTeamView.aspx.cs">
+      <DependentUpon>Hiring_HiringTeamView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hiring_HiringTeamView.aspx.designer.cs">
+      <DependentUpon>Hiring_HiringTeamView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hiring_ManagerDashboard.aspx.cs">
+      <DependentUpon>Hiring_ManagerDashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hiring_ManagerDashboard.aspx.designer.cs">
+      <DependentUpon>Hiring_ManagerDashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hiring_ManagerView.aspx.cs">
+      <DependentUpon>Hiring_ManagerView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hiring_ManagerView.aspx.designer.cs">
+      <DependentUpon>Hiring_ManagerView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hiring_ProfileCreationDashboard.aspx.cs">
+      <DependentUpon>Hiring_ProfileCreationDashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hiring_ProfileCreationDashboard.aspx.designer.cs">
+      <DependentUpon>Hiring_ProfileCreationDashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hiring_ScoringSheet.aspx.cs">
+      <DependentUpon>Hiring_ScoringSheet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hiring_ScoringSheet.aspx.designer.cs">
+      <DependentUpon>Hiring_ScoringSheet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hiring_TrainingDashboard.aspx.cs">
+      <DependentUpon>Hiring_TrainingDashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hiring_TrainingDashboard.aspx.designer.cs">
+      <DependentUpon>Hiring_TrainingDashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hiring_TrainingTeamView.aspx.cs">
+      <DependentUpon>Hiring_TrainingTeamView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hiring_TrainingTeamView.aspx.designer.cs">
+      <DependentUpon>Hiring_TrainingTeamView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HWAuditSheetQA.aspx.cs">
+      <DependentUpon>HWAuditSheetQA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HWAuditSheetQA.aspx.designer.cs">
+      <DependentUpon>HWAuditSheetQA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HWAuditSheetTL.aspx.cs">
+      <DependentUpon>HWAuditSheetTL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HWAuditSheetTL.aspx.designer.cs">
+      <DependentUpon>HWAuditSheetTL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HWAuditSheetUser.aspx.cs">
+      <DependentUpon>HWAuditSheetUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HWAuditSheetUser.aspx.designer.cs">
+      <DependentUpon>HWAuditSheetUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HygieneCheckEditQA.aspx.cs">
+      <DependentUpon>HygieneCheckEditQA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HygieneCheckEditQA.aspx.designer.cs">
+      <DependentUpon>HygieneCheckEditQA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HygieneCheckQA.aspx.cs">
+      <DependentUpon>HygieneCheckQA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HygieneCheckQA.aspx.designer.cs">
+      <DependentUpon>HygieneCheckQA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HygieneCheckUser.aspx.cs">
+      <DependentUpon>HygieneCheckUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HygieneCheckUser.aspx.designer.cs">
+      <DependentUpon>HygieneCheckUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hygiene_Check.aspx.cs">
+      <DependentUpon>Hygiene_Check.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hygiene_Check.aspx.designer.cs">
+      <DependentUpon>Hygiene_Check.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hygiene_CheckUser.aspx.cs">
+      <DependentUpon>Hygiene_CheckUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hygiene_CheckUser.aspx.designer.cs">
+      <DependentUpon>Hygiene_CheckUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LegendHW.aspx.cs">
+      <DependentUpon>LegendHW.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LegendHW.aspx.designer.cs">
+      <DependentUpon>LegendHW.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LegendSelect.aspx.cs">
+      <DependentUpon>LegendSelect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LegendSelect.aspx.designer.cs">
+      <DependentUpon>LegendSelect.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LegendSelectAgent.aspx.cs">
+      <DependentUpon>LegendSelectAgent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LegendSelectAgent.aspx.designer.cs">
+      <DependentUpon>LegendSelectAgent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LegendSelectMgr.aspx.cs">
+      <DependentUpon>LegendSelectMgr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LegendSelectMgr.aspx.designer.cs">
+      <DependentUpon>LegendSelectMgr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LegendSelectTL.aspx.cs">
+      <DependentUpon>LegendSelectTL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LegendSelectTL.aspx.designer.cs">
+      <DependentUpon>LegendSelectTL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MgrDashboardADX.aspx.cs">
+      <DependentUpon>MgrDashboardADX.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MgrDashboardADX.aspx.designer.cs">
+      <DependentUpon>MgrDashboardADX.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MgrDashboardCDT.aspx.cs">
+      <DependentUpon>MgrDashboardCDT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MgrDashboardCDT.aspx.designer.cs">
+      <DependentUpon>MgrDashboardCDT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MgrDashboardChat.aspx.cs">
+      <DependentUpon>MgrDashboardChat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MgrDashboardChat.aspx.designer.cs">
+      <DependentUpon>MgrDashboardChat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MgrDashboardDaaS.aspx.cs">
+      <DependentUpon>MgrDashboardDaaS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MgrDashboardDaaS.aspx.designer.cs">
+      <DependentUpon>MgrDashboardDaaS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MgrDashboardDOA.aspx.cs">
+      <DependentUpon>MgrDashboardDOA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MgrDashboardDOA.aspx.designer.cs">
+      <DependentUpon>MgrDashboardDOA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MgrDashboardKCI.aspx.cs">
+      <DependentUpon>MgrDashboardKCI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MgrDashboardKCI.aspx.designer.cs">
+      <DependentUpon>MgrDashboardKCI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MgrDashboardMPSEmail.aspx.cs">
+      <DependentUpon>MgrDashboardMPSEmail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MgrDashboardMPSEmail.aspx.designer.cs">
+      <DependentUpon>MgrDashboardMPSEmail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MgrDashboardOmnichannel.aspx.cs">
+      <DependentUpon>MgrDashboardOmnichannel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MgrDashboardOmnichannel.aspx.designer.cs">
+      <DependentUpon>MgrDashboardOmnichannel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MgrDashboardOnsitePURR.aspx.cs">
+      <DependentUpon>MgrDashboardOnsitePURR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MgrDashboardOnsitePURR.aspx.designer.cs">
+      <DependentUpon>MgrDashboardOnsitePURR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MgrDashboardPDRA_RS_RC.aspx.cs">
+      <DependentUpon>MgrDashboardPDRA_RS_RC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MgrDashboardPDRA_RS_RC.aspx.designer.cs">
+      <DependentUpon>MgrDashboardPDRA_RS_RC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MgrDashboardSAPOS.aspx.cs">
+      <DependentUpon>MgrDashboardSAPOS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MgrDashboardSAPOS.aspx.designer.cs">
+      <DependentUpon>MgrDashboardSAPOS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MgrDashboardSoMe.aspx.cs">
+      <DependentUpon>MgrDashboardSoMe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MgrDashboardSoMe.aspx.designer.cs">
+      <DependentUpon>MgrDashboardSoMe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MgrDashboardSwivel.aspx.cs">
+      <DependentUpon>MgrDashboardSwivel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MgrDashboardSwivel.aspx.designer.cs">
+      <DependentUpon>MgrDashboardSwivel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MgrDashboardTCO.aspx.cs">
+      <DependentUpon>MgrDashboardTCO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MgrDashboardTCO.aspx.designer.cs">
+      <DependentUpon>MgrDashboardTCO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MgrDashboardTOC.aspx.cs">
+      <DependentUpon>MgrDashboardTOC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MgrDashboardTOC.aspx.designer.cs">
+      <DependentUpon>MgrDashboardTOC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MgrDashboardVoice.aspx.cs">
+      <DependentUpon>MgrDashboardVoice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MgrDashboardVoice.aspx.designer.cs">
+      <DependentUpon>MgrDashboardVoice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MgrLogin.aspx.cs">
+      <DependentUpon>MgrLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MgrLogin.aspx.designer.cs">
+      <DependentUpon>MgrLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mgr_Dashboard.aspx.cs">
+      <DependentUpon>Mgr_Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mgr_Dashboard.aspx.designer.cs">
+      <DependentUpon>Mgr_Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OL_Login.aspx.cs">
+      <DependentUpon>OL_Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OL_Login.aspx.designer.cs">
+      <DependentUpon>OL_Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OL_View.aspx.cs">
+      <DependentUpon>OL_View.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OL_View.aspx.designer.cs">
+      <DependentUpon>OL_View.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OM_Login.aspx.cs">
+      <DependentUpon>OM_Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OM_Login.aspx.designer.cs">
+      <DependentUpon>OM_Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OM_View.aspx.cs">
+      <DependentUpon>OM_View.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OM_View.aspx.designer.cs">
+      <DependentUpon>OM_View.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PersonaLegendComm.aspx.cs">
+      <DependentUpon>PersonaLegendComm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PersonaLegendComm.aspx.designer.cs">
+      <DependentUpon>PersonaLegendComm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProfileDetailForm.aspx.cs">
+      <DependentUpon>ProfileDetailForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProfileDetailForm.aspx.designer.cs">
+      <DependentUpon>ProfileDetailForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProfileDetailForm_Hiring.aspx.cs">
+      <DependentUpon>ProfileDetailForm_Hiring.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProfileDetailForm_Hiring.aspx.designer.cs">
+      <DependentUpon>ProfileDetailForm_Hiring.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QADashboard.aspx.cs">
+      <DependentUpon>QADashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QADashboard.aspx.designer.cs">
+      <DependentUpon>QADashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QADashboardADX.aspx.cs">
+      <DependentUpon>QADashboardADX.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QADashboardADX.aspx.designer.cs">
+      <DependentUpon>QADashboardADX.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QADashboardCEM.aspx.cs">
+      <DependentUpon>QADashboardCEM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QADashboardCEM.aspx.designer.cs">
+      <DependentUpon>QADashboardCEM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QADashboardCO.aspx.cs">
+      <DependentUpon>QADashboardCO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QADashboardCO.aspx.designer.cs">
+      <DependentUpon>QADashboardCO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QADashboardComm.aspx.cs">
+      <DependentUpon>QADashboardComm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QADashboardComm.aspx.designer.cs">
+      <DependentUpon>QADashboardComm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QADashboardForums.aspx.cs">
+      <DependentUpon>QADashboardForums.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QADashboardForums.aspx.designer.cs">
+      <DependentUpon>QADashboardForums.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QADashboardFY21ADXLegend.aspx.cs">
+      <DependentUpon>QADashboardFY21ADXLegend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QADashboardFY21ADXLegend.aspx.designer.cs">
+      <DependentUpon>QADashboardFY21ADXLegend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QADashboardFY21CDTLegend.aspx.cs">
+      <DependentUpon>QADashboardFY21CDTLegend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QADashboardFY21CDTLegend.aspx.designer.cs">
+      <DependentUpon>QADashboardFY21CDTLegend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QADashboardFY21ChatLegend.aspx.cs">
+      <DependentUpon>QADashboardFY21ChatLegend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QADashboardFY21ChatLegend.aspx.designer.cs">
+      <DependentUpon>QADashboardFY21ChatLegend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QADashboardFY21DOALegend.aspx.cs">
+      <DependentUpon>QADashboardFY21DOALegend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QADashboardFY21DOALegend.aspx.designer.cs">
+      <DependentUpon>QADashboardFY21DOALegend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QADashboardFY21Legend.aspx.cs">
+      <DependentUpon>QADashboardFY21Legend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QADashboardFY21Legend.aspx.designer.cs">
+      <DependentUpon>QADashboardFY21Legend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QADashboardFY21SAPOSLegend.aspx.cs">
+      <DependentUpon>QADashboardFY21SAPOSLegend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QADashboardFY21SAPOSLegend.aspx.designer.cs">
+      <DependentUpon>QADashboardFY21SAPOSLegend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QADashboardFY21SoMeLegend.aspx.cs">
+      <DependentUpon>QADashboardFY21SoMeLegend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QADashboardFY21SoMeLegend.aspx.designer.cs">
+      <DependentUpon>QADashboardFY21SoMeLegend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QADashboardFY21VoiceLegend.aspx.cs">
+      <DependentUpon>QADashboardFY21VoiceLegend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QADashboardFY21VoiceLegend.aspx.designer.cs">
+      <DependentUpon>QADashboardFY21VoiceLegend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QADashboardFY22DaaSLegend.aspx.cs">
+      <DependentUpon>QADashboardFY22DaaSLegend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QADashboardFY22DaaSLegend.aspx.designer.cs">
+      <DependentUpon>QADashboardFY22DaaSLegend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QADashboardFY22KCILegend.aspx.cs">
+      <DependentUpon>QADashboardFY22KCILegend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QADashboardFY22KCILegend.aspx.designer.cs">
+      <DependentUpon>QADashboardFY22KCILegend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QADashboardFY22MPSEmailLegend.aspx.cs">
+      <DependentUpon>QADashboardFY22MPSEmailLegend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QADashboardFY22MPSEmailLegend.aspx.designer.cs">
+      <DependentUpon>QADashboardFY22MPSEmailLegend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QADashboardFY22OmnichannelLegend.aspx.cs">
+      <DependentUpon>QADashboardFY22OmnichannelLegend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QADashboardFY22OmnichannelLegend.aspx.designer.cs">
+      <DependentUpon>QADashboardFY22OmnichannelLegend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QADashboardFY22OnsitePURRLegend.aspx.cs">
+      <DependentUpon>QADashboardFY22OnsitePURRLegend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QADashboardFY22OnsitePURRLegend.aspx.designer.cs">
+      <DependentUpon>QADashboardFY22OnsitePURRLegend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QADashboardFY22PDRA_RS_RCLegend.aspx.cs">
+      <DependentUpon>QADashboardFY22PDRA_RS_RCLegend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QADashboardFY22PDRA_RS_RCLegend.aspx.designer.cs">
+      <DependentUpon>QADashboardFY22PDRA_RS_RCLegend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QADashboardFY22SwivelLegend.aspx.cs">
+      <DependentUpon>QADashboardFY22SwivelLegend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QADashboardFY22SwivelLegend.aspx.designer.cs">
+      <DependentUpon>QADashboardFY22SwivelLegend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QADashboardFY22TCOLegend.aspx.cs">
+      <DependentUpon>QADashboardFY22TCOLegend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QADashboardFY22TCOLegend.aspx.designer.cs">
+      <DependentUpon>QADashboardFY22TCOLegend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QADashboardHW.aspx.cs">
+      <DependentUpon>QADashboardHW.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QADashboardHW.aspx.designer.cs">
+      <DependentUpon>QADashboardHW.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QADashboardHygieneCheck.aspx.cs">
+      <DependentUpon>QADashboardHygieneCheck.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QADashboardHygieneCheck.aspx.designer.cs">
+      <DependentUpon>QADashboardHygieneCheck.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QADashboardRR.aspx.cs">
+      <DependentUpon>QADashboardRR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QADashboardRR.aspx.designer.cs">
+      <DependentUpon>QADashboardRR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QADashboardSF.aspx.cs">
+      <DependentUpon>QADashboardSF.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QADashboardSF.aspx.designer.cs">
+      <DependentUpon>QADashboardSF.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QADashboardSoMe.aspx.cs">
+      <DependentUpon>QADashboardSoMe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QADashboardSoMe.aspx.designer.cs">
+      <DependentUpon>QADashboardSoMe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QADashboardTOC.aspx.cs">
+      <DependentUpon>QADashboardTOC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QADashboardTOC.aspx.designer.cs">
+      <DependentUpon>QADashboardTOC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QALogin.aspx.cs">
+      <DependentUpon>QALogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QALogin.aspx.designer.cs">
+      <DependentUpon>QALogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PersonaVoiceLegend.aspx.cs">
+      <DependentUpon>PersonaVoiceLegend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PersonaVoiceLegend.aspx.designer.cs">
+      <DependentUpon>PersonaVoiceLegend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QATrendViewVoiceLegend.aspx.cs">
+      <DependentUpon>QATrendViewVoiceLegend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QATrendViewVoiceLegend.aspx.designer.cs">
+      <DependentUpon>QATrendViewVoiceLegend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RioRanchoLegend.aspx.cs">
+      <DependentUpon>RioRanchoLegend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RioRanchoLegend.aspx.designer.cs">
+      <DependentUpon>RioRanchoLegend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SmartFriendLegend.aspx.cs">
+      <DependentUpon>SmartFriendLegend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SmartFriendLegend.aspx.designer.cs">
+      <DependentUpon>SmartFriendLegend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SoMeFbTwLegend.aspx.cs">
+      <DependentUpon>SoMeFbTwLegend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SoMeFbTwLegend.aspx.designer.cs">
+      <DependentUpon>SoMeFbTwLegend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SoMeForumLegend.aspx.cs">
+      <DependentUpon>SoMeForumLegend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SoMeForumLegend.aspx.designer.cs">
+      <DependentUpon>SoMeForumLegend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Testing.aspx.cs">
+      <DependentUpon>Testing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Testing.aspx.designer.cs">
+      <DependentUpon>Testing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TLDashboard.aspx.cs">
+      <DependentUpon>TLDashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TLDashboard.aspx.designer.cs">
+      <DependentUpon>TLDashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TLDashboardComm.aspx.cs">
+      <DependentUpon>TLDashboardComm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TLDashboardComm.aspx.designer.cs">
+      <DependentUpon>TLDashboardComm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TLDashboardCoreOps.aspx.cs">
+      <DependentUpon>TLDashboardCoreOps.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TLDashboardCoreOps.aspx.designer.cs">
+      <DependentUpon>TLDashboardCoreOps.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TLDashboardForum.aspx.cs">
+      <DependentUpon>TLDashboardForum.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TLDashboardForum.aspx.designer.cs">
+      <DependentUpon>TLDashboardForum.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TLDashboardHW.aspx.cs">
+      <DependentUpon>TLDashboardHW.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TLDashboardHW.aspx.designer.cs">
+      <DependentUpon>TLDashboardHW.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TLDashboardRioRancho.aspx.cs">
+      <DependentUpon>TLDashboardRioRancho.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TLDashboardRioRancho.aspx.designer.cs">
+      <DependentUpon>TLDashboardRioRancho.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TLDashboardSoMe.aspx.cs">
+      <DependentUpon>TLDashboardSoMe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TLDashboardSoMe.aspx.designer.cs">
+      <DependentUpon>TLDashboardSoMe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TLLogin.aspx.cs">
+      <DependentUpon>TLLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TLLogin.aspx.designer.cs">
+      <DependentUpon>TLLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TL_Dashboard.aspx.cs">
+      <DependentUpon>TL_Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TL_Dashboard.aspx.designer.cs">
+      <DependentUpon>TL_Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TL_DashboardADX.aspx.cs">
+      <DependentUpon>TL_DashboardADX.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TL_DashboardADX.aspx.designer.cs">
+      <DependentUpon>TL_DashboardADX.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TL_DashboardCEM.aspx.cs">
+      <DependentUpon>TL_DashboardCEM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TL_DashboardCEM.aspx.designer.cs">
+      <DependentUpon>TL_DashboardCEM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TL_DashboardComm.aspx.cs">
+      <DependentUpon>TL_DashboardComm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TL_DashboardComm.aspx.designer.cs">
+      <DependentUpon>TL_DashboardComm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TL_DashboardCoreOps.aspx.cs">
+      <DependentUpon>TL_DashboardCoreOps.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TL_DashboardCoreOps.aspx.designer.cs">
+      <DependentUpon>TL_DashboardCoreOps.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TL_DashboardForum.aspx.cs">
+      <DependentUpon>TL_DashboardForum.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TL_DashboardForum.aspx.designer.cs">
+      <DependentUpon>TL_DashboardForum.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TL_DashboardHW.aspx.cs">
+      <DependentUpon>TL_DashboardHW.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TL_DashboardHW.aspx.designer.cs">
+      <DependentUpon>TL_DashboardHW.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TL_DashboardRioRancho.aspx.cs">
+      <DependentUpon>TL_DashboardRioRancho.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TL_DashboardRioRancho.aspx.designer.cs">
+      <DependentUpon>TL_DashboardRioRancho.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TL_DashboardSF.aspx.cs">
+      <DependentUpon>TL_DashboardSF.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TL_DashboardSF.aspx.designer.cs">
+      <DependentUpon>TL_DashboardSF.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TL_DashboardSoMe.aspx.cs">
+      <DependentUpon>TL_DashboardSoMe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TL_DashboardSoMe.aspx.designer.cs">
+      <DependentUpon>TL_DashboardSoMe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TL_DashboardTOC.aspx.cs">
+      <DependentUpon>TL_DashboardTOC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TL_DashboardTOC.aspx.designer.cs">
+      <DependentUpon>TL_DashboardTOC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TOC_Legend.aspx.cs">
+      <DependentUpon>TOC_Legend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TOC_Legend.aspx.designer.cs">
+      <DependentUpon>TOC_Legend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TOC_LegendGL.aspx.cs">
+      <DependentUpon>TOC_LegendGL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TOC_LegendGL.aspx.designer.cs">
+      <DependentUpon>TOC_LegendGL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TrainerLogin.aspx.cs">
+      <DependentUpon>TrainerLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TrainerLogin.aspx.designer.cs">
+      <DependentUpon>TrainerLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TrainingDashboardNH.aspx.cs">
+      <DependentUpon>TrainingDashboardNH.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TrainingDashboardNH.aspx.designer.cs">
+      <DependentUpon>TrainingDashboardNH.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TrainingSheetNH.aspx.cs">
+      <DependentUpon>TrainingSheetNH.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TrainingSheetNH.aspx.designer.cs">
+      <DependentUpon>TrainingSheetNH.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TrainingType1.aspx.cs">
+      <DependentUpon>TrainingType1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TrainingType1.aspx.designer.cs">
+      <DependentUpon>TrainingType1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TrainingType2.aspx.cs">
+      <DependentUpon>TrainingType2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TrainingType2.aspx.designer.cs">
+      <DependentUpon>TrainingType2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TypeSelect.aspx.cs">
+      <DependentUpon>TypeSelect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TypeSelect.aspx.designer.cs">
+      <DependentUpon>TypeSelect.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UniversalConsLegend.aspx.cs">
+      <DependentUpon>UniversalConsLegend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UniversalConsLegend.aspx.designer.cs">
+      <DependentUpon>UniversalConsLegend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserDashboard.aspx.cs">
+      <DependentUpon>UserDashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserDashboard.aspx.designer.cs">
+      <DependentUpon>UserDashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserDashboardADX.aspx.cs">
+      <DependentUpon>UserDashboardADX.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserDashboardADX.aspx.designer.cs">
+      <DependentUpon>UserDashboardADX.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserDashboardCEM.aspx.cs">
+      <DependentUpon>UserDashboardCEM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserDashboardCEM.aspx.designer.cs">
+      <DependentUpon>UserDashboardCEM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserDashboardCO.aspx.cs">
+      <DependentUpon>UserDashboardCO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserDashboardCO.aspx.designer.cs">
+      <DependentUpon>UserDashboardCO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserDashboardComm.aspx.cs">
+      <DependentUpon>UserDashboardComm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserDashboardComm.aspx.designer.cs">
+      <DependentUpon>UserDashboardComm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserDashboardForums.aspx.cs">
+      <DependentUpon>UserDashboardForums.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserDashboardForums.aspx.designer.cs">
+      <DependentUpon>UserDashboardForums.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserDashboardFY21ADX.aspx.cs">
+      <DependentUpon>UserDashboardFY21ADX.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserDashboardFY21ADX.aspx.designer.cs">
+      <DependentUpon>UserDashboardFY21ADX.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserDashboardFY21CDT.aspx.cs">
+      <DependentUpon>UserDashboardFY21CDT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserDashboardFY21CDT.aspx.designer.cs">
+      <DependentUpon>UserDashboardFY21CDT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserDashboardFY21Chat.aspx.cs">
+      <DependentUpon>UserDashboardFY21Chat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserDashboardFY21Chat.aspx.designer.cs">
+      <DependentUpon>UserDashboardFY21Chat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserDashboardFY21DOA.aspx.cs">
+      <DependentUpon>UserDashboardFY21DOA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserDashboardFY21DOA.aspx.designer.cs">
+      <DependentUpon>UserDashboardFY21DOA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserDashboardFY21SAPOS.aspx.cs">
+      <DependentUpon>UserDashboardFY21SAPOS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserDashboardFY21SAPOS.aspx.designer.cs">
+      <DependentUpon>UserDashboardFY21SAPOS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserDashboardFY21SoMe.aspx.cs">
+      <DependentUpon>UserDashboardFY21SoMe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserDashboardFY21SoMe.aspx.designer.cs">
+      <DependentUpon>UserDashboardFY21SoMe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserDashboardFY21Voice.aspx.cs">
+      <DependentUpon>UserDashboardFY21Voice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserDashboardFY21Voice.aspx.designer.cs">
+      <DependentUpon>UserDashboardFY21Voice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserDashboardFY22DaaS.aspx.cs">
+      <DependentUpon>UserDashboardFY22DaaS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserDashboardFY22DaaS.aspx.designer.cs">
+      <DependentUpon>UserDashboardFY22DaaS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserDashboardFY22KCI.aspx.cs">
+      <DependentUpon>UserDashboardFY22KCI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserDashboardFY22KCI.aspx.designer.cs">
+      <DependentUpon>UserDashboardFY22KCI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserDashboardFY22MPSEmail.aspx.cs">
+      <DependentUpon>UserDashboardFY22MPSEmail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserDashboardFY22MPSEmail.aspx.designer.cs">
+      <DependentUpon>UserDashboardFY22MPSEmail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserDashboardFY22Omnichannel.aspx.cs">
+      <DependentUpon>UserDashboardFY22Omnichannel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserDashboardFY22Omnichannel.aspx.designer.cs">
+      <DependentUpon>UserDashboardFY22Omnichannel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserDashboardFY22OnsitePURRLegend.aspx.cs">
+      <DependentUpon>UserDashboardFY22OnsitePURRLegend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserDashboardFY22OnsitePURRLegend.aspx.designer.cs">
+      <DependentUpon>UserDashboardFY22OnsitePURRLegend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserDashboardFY22PDRA_RS_RC.aspx.cs">
+      <DependentUpon>UserDashboardFY22PDRA_RS_RC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserDashboardFY22PDRA_RS_RC.aspx.designer.cs">
+      <DependentUpon>UserDashboardFY22PDRA_RS_RC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserDashboardFY22Swivel.aspx.cs">
+      <DependentUpon>UserDashboardFY22Swivel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserDashboardFY22Swivel.aspx.designer.cs">
+      <DependentUpon>UserDashboardFY22Swivel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserDashboardFY22TCO.aspx.cs">
+      <DependentUpon>UserDashboardFY22TCO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserDashboardFY22TCO.aspx.designer.cs">
+      <DependentUpon>UserDashboardFY22TCO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserDashboardHW.aspx.cs">
+      <DependentUpon>UserDashboardHW.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserDashboardHW.aspx.designer.cs">
+      <DependentUpon>UserDashboardHW.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserDashboardHygieneCheck.aspx.cs">
+      <DependentUpon>UserDashboardHygieneCheck.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserDashboardHygieneCheck.aspx.designer.cs">
+      <DependentUpon>UserDashboardHygieneCheck.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserDashboardRR.aspx.cs">
+      <DependentUpon>UserDashboardRR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserDashboardRR.aspx.designer.cs">
+      <DependentUpon>UserDashboardRR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserDashboardSF.aspx.cs">
+      <DependentUpon>UserDashboardSF.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserDashboardSF.aspx.designer.cs">
+      <DependentUpon>UserDashboardSF.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserDashboardSoMe.aspx.cs">
+      <DependentUpon>UserDashboardSoMe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserDashboardSoMe.aspx.designer.cs">
+      <DependentUpon>UserDashboardSoMe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserDashboardTOC.aspx.cs">
+      <DependentUpon>UserDashboardTOC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserDashboardTOC.aspx.designer.cs">
+      <DependentUpon>UserDashboardTOC.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Outlook">
+      <Guid>{00062FFF-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>9</VersionMajor>
+      <VersionMinor>6</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>24808</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:24808/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,1207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\rnik\Desktop\Quality Audit</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="1x1_Tracker.aspx">
+      <publishTime>03/15/2022 15:43:18</publishTime>
+    </File>
+    <File Include="21_ADXLegend.aspx">
+      <publishTime>07/18/2023 16:47:40</publishTime>
+    </File>
+    <File Include="21_ADXLegendGL.aspx">
+      <publishTime>10/28/2021 14:34:27</publishTime>
+    </File>
+    <File Include="21_CDTLegend.aspx">
+      <publishTime>11/24/2022 18:06:09</publishTime>
+    </File>
+    <File Include="21_ChatLegend.aspx">
+      <publishTime>07/18/2023 16:27:26</publishTime>
+    </File>
+    <File Include="21_ChatLegendGL.aspx">
+      <publishTime>08/26/2022 01:21:50</publishTime>
+    </File>
+    <File Include="21_CommercialLegend.aspx">
+      <publishTime>01/18/2021 08:51:48</publishTime>
+    </File>
+    <File Include="21_DOALegend.aspx">
+      <publishTime>11/24/2022 18:00:15</publishTime>
+    </File>
+    <File Include="21_DOALegendGL.aspx">
+      <publishTime>12/02/2021 16:06:13</publishTime>
+    </File>
+    <File Include="21_SAPOSLegend.aspx">
+      <publishTime>11/24/2022 18:23:36</publishTime>
+    </File>
+    <File Include="21_SoMeLegend.aspx">
+      <publishTime>01/25/2023 18:12:37</publishTime>
+    </File>
+    <File Include="21_SoMeLegendGL.aspx">
+      <publishTime>02/21/2022 16:55:29</publishTime>
+    </File>
+    <File Include="21_VoiceLegend.aspx">
+      <publishTime>07/12/2023 22:11:50</publishTime>
+    </File>
+    <File Include="21_VoiceLegendGL.aspx">
+      <publishTime>08/26/2022 01:17:02</publishTime>
+    </File>
+    <File Include="22_DaaSGL.aspx">
+      <publishTime>08/12/2022 00:04:41</publishTime>
+    </File>
+    <File Include="22_DaaSLegend.aspx">
+      <publishTime>03/18/2023 03:18:50</publishTime>
+    </File>
+    <File Include="22_Email_PSCC_MPS_Legend.aspx">
+      <publishTime>11/28/2022 20:06:51</publishTime>
+    </File>
+    <File Include="22_KCI_2Legend.aspx">
+      <publishTime>11/24/2022 18:11:05</publishTime>
+    </File>
+    <File Include="22_Omnichannel_Legend.aspx">
+      <publishTime>11/24/2022 18:36:03</publishTime>
+    </File>
+    <File Include="22_OnsiteAndPURRLegend.aspx">
+      <publishTime>11/24/2022 18:30:11</publishTime>
+    </File>
+    <File Include="22_PDRA_RS_RC_Legend.aspx">
+      <publishTime>11/24/2022 18:32:55</publishTime>
+    </File>
+    <File Include="22_Swivel_DaaSGL.aspx">
+      <publishTime>08/12/2022 00:02:29</publishTime>
+    </File>
+    <File Include="22_Swivel_DaasLegend.aspx">
+      <publishTime>11/24/2022 17:42:37</publishTime>
+    </File>
+    <File Include="22_TCOLegend.aspx">
+      <publishTime>11/24/2022 18:24:59</publishTime>
+    </File>
+    <File Include="22_TCOLegendGL.aspx">
+      <publishTime>02/02/2022 18:36:38</publishTime>
+    </File>
+    <File Include="ADXLegend.aspx">
+      <publishTime>02/09/2021 18:28:57</publishTime>
+    </File>
+    <File Include="AgentLogin.aspx">
+      <publishTime>06/28/2022 14:11:24</publishTime>
+    </File>
+    <File Include="AgentLogin.css">
+      <publishTime>02/23/2021 12:24:36</publishTime>
+    </File>
+    <File Include="ApplicationInsights.config">
+      <publishTime>12/24/2018 21:35:46</publishTime>
+    </File>
+    <File Include="App_Data/MyDB.mdf">
+      <publishTime>05/09/2019 14:13:37</publishTime>
+    </File>
+    <File Include="App_Data/MyDB_log.ldf">
+      <publishTime>05/09/2019 14:13:37</publishTime>
+    </File>
+    <File Include="Attrition_HiringLogin.aspx">
+      <publishTime>04/14/2022 15:55:32</publishTime>
+    </File>
+    <File Include="Attrition_Hiring_SelectOptions.aspx">
+      <publishTime>04/14/2022 16:41:06</publishTime>
+    </File>
+    <File Include="Attrition_ManagerLogin.aspx">
+      <publishTime>04/01/2022 15:07:56</publishTime>
+    </File>
+    <File Include="Attrition_Mgr_SelectOptions.aspx">
+      <publishTime>04/01/2022 14:53:45</publishTime>
+    </File>
+    <File Include="AuditFeedbackForm.aspx">
+      <publishTime>12/18/2020 12:18:08</publishTime>
+    </File>
+    <File Include="AuditFeedbackFormADX.aspx">
+      <publishTime>10/06/2021 23:51:42</publishTime>
+    </File>
+    <File Include="AuditFeedbackFormCDT.aspx">
+      <publishTime>10/06/2021 23:51:21</publishTime>
+    </File>
+    <File Include="AuditFeedbackFormChat.aspx">
+      <publishTime>06/07/2022 19:29:48</publishTime>
+    </File>
+    <File Include="AuditFeedbackFormDaaS.aspx">
+      <publishTime>07/29/2022 02:20:29</publishTime>
+    </File>
+    <File Include="AuditFeedbackFormDOA.aspx">
+      <publishTime>06/28/2022 21:32:54</publishTime>
+    </File>
+    <File Include="AuditFeedbackFormKCI.aspx">
+      <publishTime>06/01/2022 18:42:35</publishTime>
+    </File>
+    <File Include="AuditFeedbackFormMPSEmail.aspx">
+      <publishTime>08/11/2022 16:36:55</publishTime>
+    </File>
+    <File Include="AuditFeedbackFormOmnichannel.aspx">
+      <publishTime>08/03/2022 19:39:21</publishTime>
+    </File>
+    <File Include="AuditFeedbackFormOnsitePURR.aspx">
+      <publishTime>06/22/2022 18:11:17</publishTime>
+    </File>
+    <File Include="AuditFeedbackFormPDRA_RS_RC.aspx">
+      <publishTime>06/28/2022 21:35:10</publishTime>
+    </File>
+    <File Include="AuditFeedbackFormSoMe.aspx">
+      <publishTime>02/27/2023 14:45:52</publishTime>
+    </File>
+    <File Include="AuditFeedbackFormSwivel.aspx">
+      <publishTime>07/27/2022 19:13:40</publishTime>
+    </File>
+    <File Include="AuditFeedbackFormTCO.aspx">
+      <publishTime>06/22/2022 18:09:28</publishTime>
+    </File>
+    <File Include="AuditFeedbackFormTOC.aspx">
+      <publishTime>09/27/2022 13:05:30</publishTime>
+    </File>
+    <File Include="AuditFeedbackFormVoice.aspx">
+      <publishTime>07/29/2022 02:38:40</publishTime>
+    </File>
+    <File Include="AuditFormChatLegendComm.aspx">
+      <publishTime>01/02/2019 16:26:41</publishTime>
+    </File>
+    <File Include="AuditFormChatLegendComm.css">
+      <publishTime>12/27/2018 21:50:30</publishTime>
+    </File>
+    <File Include="AuditFormVoiceLegendComm.css">
+      <publishTime>01/08/2019 21:46:34</publishTime>
+    </File>
+    <File Include="AuditFormVoiceLegendComm.js">
+      <publishTime>01/04/2019 18:31:59</publishTime>
+    </File>
+    <File Include="AuditSheetADXQA.aspx">
+      <publishTime>07/18/2023 17:12:04</publishTime>
+    </File>
+    <File Include="AuditSheetCDTQA.aspx">
+      <publishTime>11/24/2022 18:06:06</publishTime>
+    </File>
+    <File Include="AuditSheetChatQA.aspx">
+      <publishTime>07/12/2023 22:55:53</publishTime>
+    </File>
+    <File Include="AuditSheetCommQA.aspx">
+      <publishTime>02/09/2021 18:28:29</publishTime>
+    </File>
+    <File Include="AuditSheetCommUser.aspx">
+      <publishTime>09/02/2020 17:35:12</publishTime>
+    </File>
+    <File Include="AuditSheetDaaSQA.aspx">
+      <publishTime>11/30/2022 23:21:33</publishTime>
+    </File>
+    <File Include="AuditSheetDOAQA.aspx">
+      <publishTime>11/24/2022 18:00:13</publishTime>
+    </File>
+    <File Include="AuditSheetKCIQA.aspx">
+      <publishTime>11/24/2022 18:11:00</publishTime>
+    </File>
+    <File Include="AuditSheetMgrFY21ADX.aspx">
+      <publishTime>07/18/2023 17:10:41</publishTime>
+    </File>
+    <File Include="AuditSheetMgrFY21CDT.aspx">
+      <publishTime>02/16/2022 21:50:56</publishTime>
+    </File>
+    <File Include="AuditSheetMgrFY21Chat.aspx">
+      <publishTime>07/12/2023 23:09:22</publishTime>
+    </File>
+    <File Include="AuditSheetMgrFY21DOA.aspx">
+      <publishTime>02/16/2022 21:50:51</publishTime>
+    </File>
+    <File Include="AuditSheetMgrFY21SAPOS.aspx">
+      <publishTime>08/31/2021 20:23:46</publishTime>
+    </File>
+    <File Include="AuditSheetMgrFY21SoMe.aspx">
+      <publishTime>09/19/2022 16:15:35</publishTime>
+    </File>
+    <File Include="AuditSheetMgrFY21Voice.aspx">
+      <publishTime>07/12/2023 22:56:50</publishTime>
+    </File>
+    <File Include="AuditSheetMgrFY22DaaS.aspx">
+      <publishTime>07/29/2022 02:12:36</publishTime>
+    </File>
+    <File Include="AuditSheetMgrFY22KCI.aspx">
+      <publishTime>06/02/2022 13:59:53</publishTime>
+    </File>
+    <File Include="AuditSheetMgrFY22MPSEmail.aspx">
+      <publishTime>11/28/2022 20:14:21</publishTime>
+    </File>
+    <File Include="AuditSheetMgrFY22Omnichannel.aspx">
+      <publishTime>08/02/2022 13:28:46</publishTime>
+    </File>
+    <File Include="AuditSheetMgrFY22OnsitePURR.aspx">
+      <publishTime>09/16/2022 13:50:39</publishTime>
+    </File>
+    <File Include="AuditSheetMgrFY22PDRA_RS_RC.aspx">
+      <publishTime>06/28/2022 19:58:21</publishTime>
+    </File>
+    <File Include="AuditSheetMgrFY22Swivel.aspx">
+      <publishTime>07/27/2022 19:11:25</publishTime>
+    </File>
+    <File Include="AuditSheetMgrFY22TCO.aspx">
+      <publishTime>06/06/2023 18:04:37</publishTime>
+    </File>
+    <File Include="AuditSheetMgrTOC.aspx">
+      <publishTime>09/26/2022 17:55:39</publishTime>
+    </File>
+    <File Include="AuditSheetMPSEmailQA.aspx">
+      <publishTime>01/23/2023 15:52:41</publishTime>
+    </File>
+    <File Include="AuditSheetOmnichannelQA.aspx">
+      <publishTime>11/24/2022 18:35:59</publishTime>
+    </File>
+    <File Include="AuditSheetOnsitePURRQA.aspx">
+      <publishTime>11/24/2022 18:30:07</publishTime>
+    </File>
+    <File Include="AuditSheetPDRA_RS_RCQA.aspx">
+      <publishTime>11/24/2022 18:32:52</publishTime>
+    </File>
+    <File Include="AuditSheetQA.aspx">
+      <publishTime>02/09/2021 18:27:29</publishTime>
+    </File>
+    <File Include="AuditSheetQACEM.aspx">
+      <publishTime>11/24/2022 17:58:23</publishTime>
+    </File>
+    <File Include="AuditSheetQACO.aspx">
+      <publishTime>02/09/2021 18:30:09</publishTime>
+    </File>
+    <File Include="AuditSheetQAForums.aspx">
+      <publishTime>02/09/2021 18:31:31</publishTime>
+    </File>
+    <File Include="AuditSheetQARR.aspx">
+      <publishTime>02/09/2021 18:33:03</publishTime>
+    </File>
+    <File Include="AuditSheetQASF.aspx">
+      <publishTime>11/02/2020 19:45:29</publishTime>
+    </File>
+    <File Include="AuditSheetQASoMe.aspx">
+      <publishTime>02/09/2021 18:31:13</publishTime>
+    </File>
+    <File Include="AuditSheetQA_ADX.aspx">
+      <publishTime>02/09/2021 18:29:20</publishTime>
+    </File>
+    <File Include="AuditSheetQA_TOC.aspx">
+      <publishTime>11/24/2022 17:51:28</publishTime>
+    </File>
+    <File Include="AuditSheetSAPOSQA.aspx">
+      <publishTime>11/24/2022 18:23:33</publishTime>
+    </File>
+    <File Include="AuditSheetSoMeQA.aspx">
+      <publishTime>01/25/2023 18:15:18</publishTime>
+    </File>
+    <File Include="AuditSheetSwivelQA.aspx">
+      <publishTime>11/24/2022 17:42:30</publishTime>
+    </File>
+    <File Include="AuditSheetTCOQA.aspx">
+      <publishTime>11/24/2022 18:24:56</publishTime>
+    </File>
+    <File Include="AuditSheetTL.aspx">
+      <publishTime>08/26/2020 18:28:23</publishTime>
+    </File>
+    <File Include="AuditSheetTLADX.aspx">
+      <publishTime>04/15/2020 16:11:08</publishTime>
+    </File>
+    <File Include="AuditSheetTLCEM.aspx">
+      <publishTime>02/04/2020 14:08:44</publishTime>
+    </File>
+    <File Include="AuditSheetTLCO.aspx">
+      <publishTime>09/02/2020 17:41:48</publishTime>
+    </File>
+    <File Include="AuditSheetTLComm.aspx">
+      <publishTime>09/02/2020 17:36:08</publishTime>
+    </File>
+    <File Include="AuditSheetTLForums.aspx">
+      <publishTime>01/21/2020 21:01:14</publishTime>
+    </File>
+    <File Include="AuditSheetTLRR.aspx">
+      <publishTime>10/22/2020 17:06:20</publishTime>
+    </File>
+    <File Include="AuditSheetTLSF.aspx">
+      <publishTime>08/26/2020 18:43:57</publishTime>
+    </File>
+    <File Include="AuditSheetTLSoMe.aspx">
+      <publishTime>01/22/2020 18:23:25</publishTime>
+    </File>
+    <File Include="AuditSheetTLTOC.aspx">
+      <publishTime>10/15/2020 21:14:11</publishTime>
+    </File>
+    <File Include="AuditSheetUser.aspx">
+      <publishTime>08/26/2020 18:28:54</publishTime>
+    </File>
+    <File Include="AuditSheetUser.css">
+      <publishTime>08/06/2019 14:23:51</publishTime>
+    </File>
+    <File Include="AuditSheetUserADX.aspx">
+      <publishTime>04/15/2020 16:11:28</publishTime>
+    </File>
+    <File Include="AuditSheetUserCEM.aspx">
+      <publishTime>02/03/2020 16:03:15</publishTime>
+    </File>
+    <File Include="AuditSheetUserCO.aspx">
+      <publishTime>09/02/2020 17:42:24</publishTime>
+    </File>
+    <File Include="AuditSheetUserForums.aspx">
+      <publishTime>09/19/2019 17:01:41</publishTime>
+    </File>
+    <File Include="AuditSheetUserFY21ADX.aspx">
+      <publishTime>07/18/2023 17:11:03</publishTime>
+    </File>
+    <File Include="AuditSheetUserFY21CDT.aspx">
+      <publishTime>05/19/2022 19:31:26</publishTime>
+    </File>
+    <File Include="AuditSheetUserFY21Chat.aspx">
+      <publishTime>07/12/2023 23:09:18</publishTime>
+    </File>
+    <File Include="AuditSheetUserFY21DOA.aspx">
+      <publishTime>02/16/2022 21:50:31</publishTime>
+    </File>
+    <File Include="AuditSheetUserFY21SAPOS.aspx">
+      <publishTime>11/22/2021 19:53:28</publishTime>
+    </File>
+    <File Include="AuditSheetUserFY21SoMe.aspx">
+      <publishTime>09/19/2022 16:12:50</publishTime>
+    </File>
+    <File Include="AuditSheetUserFY21Voice.aspx">
+      <publishTime>07/12/2023 22:19:44</publishTime>
+    </File>
+    <File Include="AuditSheetUserFY22DaaS.aspx">
+      <publishTime>07/29/2022 01:57:49</publishTime>
+    </File>
+    <File Include="AuditSheetUserFY22KCI.aspx">
+      <publishTime>06/02/2022 13:59:47</publishTime>
+    </File>
+    <File Include="AuditSheetUserFY22MPSEmail.aspx">
+      <publishTime>08/11/2022 16:35:51</publishTime>
+    </File>
+    <File Include="AuditSheetUserFY22Omnichannel.aspx">
+      <publishTime>08/02/2022 13:24:02</publishTime>
+    </File>
+    <File Include="AuditSheetUserFY22OnsitePURR.aspx">
+      <publishTime>09/16/2022 13:50:37</publishTime>
+    </File>
+    <File Include="AuditSheetUserFY22PDRA_RS_RC.aspx">
+      <publishTime>06/28/2022 19:02:15</publishTime>
+    </File>
+    <File Include="AuditSheetUserFY22Swivel.aspx">
+      <publishTime>07/27/2022 19:11:40</publishTime>
+    </File>
+    <File Include="AuditSheetUserFY22TCO.aspx">
+      <publishTime>02/02/2022 20:13:18</publishTime>
+    </File>
+    <File Include="AuditSheetUserRR.aspx">
+      <publishTime>10/22/2020 17:07:23</publishTime>
+    </File>
+    <File Include="AuditSheetUserSF.aspx">
+      <publishTime>08/26/2020 18:43:38</publishTime>
+    </File>
+    <File Include="AuditSheetUserSoMe.aspx">
+      <publishTime>09/03/2019 15:04:40</publishTime>
+    </File>
+    <File Include="AuditSheetUserTOC.aspx">
+      <publishTime>09/26/2022 17:55:19</publishTime>
+    </File>
+    <File Include="AuditSheetVoiceQA.aspx">
+      <publishTime>07/12/2023 22:15:44</publishTime>
+    </File>
+    <File Include="bin/ApplicationInsights.config">
+      <publishTime>12/24/2018 21:35:46</publishTime>
+    </File>
+    <File Include="bin/Audit Legends.dll">
+      <publishTime>07/21/2023 14:12:02</publishTime>
+    </File>
+    <File Include="bin/Audit Legends.pdb">
+      <publishTime>07/21/2023 14:12:02</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>11/03/2015 17:43:42</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>11/03/2015 17:43:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
+      <publishTime>12/07/2015 19:04:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.DependencyCollector.dll">
+      <publishTime>03/10/2016 14:26:18</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.PerfCounterCollector.dll">
+      <publishTime>03/10/2016 14:26:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.ServerTelemetryChannel.dll">
+      <publishTime>03/09/2016 12:00:14</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Web.dll">
+      <publishTime>03/10/2016 14:26:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.WindowsServer.dll">
+      <publishTime>03/10/2016 14:26:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ApplicationInsights.dll">
+      <publishTime>03/09/2016 11:57:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>06/15/2015 02:06:24</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.EnterpriseLibrary.Common.dll">
+      <publishTime>02/03/2017 12:15:44</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.EnterpriseLibrary.Data.dll">
+      <publishTime>02/03/2017 12:15:44</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.EnterpriseLibrary.SemanticLogging.Etw.dll">
+      <publishTime>04/25/2013 09:56:06</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.EnterpriseLibrary.SemanticLogging.Etw.pdb">
+      <publishTime>04/25/2013 10:04:54</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.EnterpriseLibrary.Validation.dll">
+      <publishTime>06/11/2016 18:56:28</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.EnterpriseLibrary.Validation.Integration.WCF.dll">
+      <publishTime>05/11/2007 21:07:00</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.ObjectBuilder.dll">
+      <publishTime>02/03/2017 12:15:46</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.ServiceLocation.dll">
+      <publishTime>05/09/2011 17:06:36</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.ServiceLocation.pdb">
+      <publishTime>05/09/2011 17:06:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>06/18/2015 20:19:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="CEMLegend.aspx">
+      <publishTime>11/24/2022 17:58:26</publishTime>
+    </File>
+    <File Include="ChangePassword.aspx">
+      <publishTime>06/28/2022 14:12:02</publishTime>
+    </File>
+    <File Include="ChangePassword.css">
+      <publishTime>02/20/2019 19:22:34</publishTime>
+    </File>
+    <File Include="CoreOpsLegend.aspx">
+      <publishTime>02/09/2021 18:29:46</publishTime>
+    </File>
+    <File Include="DataUploadNH.aspx">
+      <publishTime>09/30/2020 19:39:42</publishTime>
+    </File>
+    <File Include="Download/ADXLegendReport.xlsx">
+      <publishTime>04/06/2020 21:03:37</publishTime>
+    </File>
+    <File Include="Download/AuditLegend.xlsx">
+      <publishTime>03/11/2019 16:46:37</publishTime>
+    </File>
+    <File Include="Download/AuditLegendReport.xlsx">
+      <publishTime>03/23/2020 17:12:26</publishTime>
+    </File>
+    <File Include="Download/CEM_Legend_Report.xlsx">
+      <publishTime>01/13/2023 20:26:52</publishTime>
+    </File>
+    <File Include="Download/CommercialLegendReport.xlsx">
+      <publishTime>03/17/2020 16:31:50</publishTime>
+    </File>
+    <File Include="Download/CoreOpsReport.xlsx">
+      <publishTime>03/17/2020 16:27:17</publishTime>
+    </File>
+    <File Include="Download/FY21 ADX Report.xlsx">
+      <publishTime>05/31/2021 02:26:03</publishTime>
+    </File>
+    <File Include="Download/FY21 CDT Report.xlsx">
+      <publishTime>08/02/2021 15:42:00</publishTime>
+    </File>
+    <File Include="Download/FY21 Chat Report.xlsx">
+      <publishTime>05/31/2021 02:26:03</publishTime>
+    </File>
+    <File Include="Download/FY21 DOA Report.xlsx">
+      <publishTime>12/10/2021 18:23:24</publishTime>
+    </File>
+    <File Include="Download/FY21 SAPOS Report.xlsx">
+      <publishTime>12/10/2021 18:25:18</publishTime>
+    </File>
+    <File Include="Download/FY21 SoMe Report.xlsx">
+      <publishTime>05/31/2021 02:26:03</publishTime>
+    </File>
+    <File Include="Download/FY21 Voice Report.xlsx">
+      <publishTime>05/31/2021 02:26:03</publishTime>
+    </File>
+    <File Include="Download/FY22 DaaS Report.xlsx">
+      <publishTime>07/29/2022 02:38:37</publishTime>
+    </File>
+    <File Include="Download/FY22 Hygiene Check Report.xlsx">
+      <publishTime>01/13/2023 20:26:29</publishTime>
+    </File>
+    <File Include="Download/FY22 KCI Report.xlsx">
+      <publishTime>06/02/2022 16:37:53</publishTime>
+    </File>
+    <File Include="Download/FY22 MPS Email PSCC Report.xlsx">
+      <publishTime>08/11/2022 23:15:32</publishTime>
+    </File>
+    <File Include="Download/FY22 Omnichannel Report.xlsx">
+      <publishTime>08/04/2022 21:25:02</publishTime>
+    </File>
+    <File Include="Download/FY22 Onsite and PURR Report.xlsx">
+      <publishTime>06/22/2022 18:42:52</publishTime>
+    </File>
+    <File Include="Download/FY22 PDRA RS RC Report.xlsx">
+      <publishTime>07/04/2022 23:08:02</publishTime>
+    </File>
+    <File Include="Download/FY22 Swivel Daas Report.xlsx">
+      <publishTime>07/27/2022 19:31:34</publishTime>
+    </File>
+    <File Include="Download/FY22 TCO Report.xlsx">
+      <publishTime>06/22/2022 18:42:52</publishTime>
+    </File>
+    <File Include="Download/FY23 ADX Report.xlsx">
+      <publishTime>01/13/2023 20:26:04</publishTime>
+    </File>
+    <File Include="Download/FY23 CDT Report.xlsx">
+      <publishTime>01/13/2023 20:26:59</publishTime>
+    </File>
+    <File Include="Download/FY23 Chat Report.xlsx">
+      <publishTime>01/13/2023 20:40:00</publishTime>
+    </File>
+    <File Include="Download/FY23 DaaS Report.xlsx">
+      <publishTime>01/13/2023 20:31:51</publishTime>
+    </File>
+    <File Include="Download/FY23 DOA Report.xlsx">
+      <publishTime>01/13/2023 20:30:56</publishTime>
+    </File>
+    <File Include="Download/FY23 KCI Report.xlsx">
+      <publishTime>01/13/2023 20:31:40</publishTime>
+    </File>
+    <File Include="Download/FY23 MPS Email PSCC Report.xlsx">
+      <publishTime>01/13/2023 20:33:24</publishTime>
+    </File>
+    <File Include="Download/FY23 Omnichannel Report.xlsx">
+      <publishTime>01/13/2023 20:35:08</publishTime>
+    </File>
+    <File Include="Download/FY23 Onsite and PURR Report.xlsx">
+      <publishTime>01/13/2023 20:35:40</publishTime>
+    </File>
+    <File Include="Download/FY23 PDRA RS RC Report.xlsx">
+      <publishTime>01/13/2023 20:36:25</publishTime>
+    </File>
+    <File Include="Download/FY23 SAPOS Report.xlsx">
+      <publishTime>01/13/2023 20:36:01</publishTime>
+    </File>
+    <File Include="Download/FY23 SoMe Report.xlsx">
+      <publishTime>01/13/2023 20:37:40</publishTime>
+    </File>
+    <File Include="Download/FY23 Swivel Daas Report.xlsx">
+      <publishTime>01/13/2023 20:38:21</publishTime>
+    </File>
+    <File Include="Download/FY23 TCO Report.xlsx">
+      <publishTime>01/13/2023 20:38:18</publishTime>
+    </File>
+    <File Include="Download/FY23 Voice Report.xlsx">
+      <publishTime>01/13/2023 20:39:04</publishTime>
+    </File>
+    <File Include="Download/Hiring/Hiring_ProfileDetailsDump.xlsx">
+      <publishTime>07/12/2022 23:06:58</publishTime>
+    </File>
+    <File Include="Download/MobilityLegendReport.xlsx">
+      <publishTime>03/17/2020 16:27:17</publishTime>
+    </File>
+    <File Include="Download/PersonaCommercialReport.xlsx">
+      <publishTime>03/17/2020 16:31:50</publishTime>
+    </File>
+    <File Include="Download/PremiumConsumerReport.xlsx">
+      <publishTime>11/02/2020 19:54:05</publishTime>
+    </File>
+    <File Include="Download/RepairLegendReport.xlsx">
+      <publishTime>07/15/2019 20:34:07</publishTime>
+    </File>
+    <File Include="Download/RepairLegendV2Report.xlsx">
+      <publishTime>03/17/2020 16:33:17</publishTime>
+    </File>
+    <File Include="Download/RioRanchoLegendReport.xlsx">
+      <publishTime>03/17/2020 16:36:09</publishTime>
+    </File>
+    <File Include="Download/SmartFriend_Report.xlsx">
+      <publishTime>04/20/2020 17:45:45</publishTime>
+    </File>
+    <File Include="Download/SoMe FbTw Report.xlsx">
+      <publishTime>03/17/2020 16:38:15</publishTime>
+    </File>
+    <File Include="Download/SoMe Forums Report.xlsx">
+      <publishTime>03/17/2020 16:39:21</publishTime>
+    </File>
+    <File Include="Download/TOC_Legend_Report.xlsx">
+      <publishTime>01/13/2023 20:39:57</publishTime>
+    </File>
+    <File Include="EditExitForm.aspx">
+      <publishTime>07/06/2021 19:53:27</publishTime>
+    </File>
+    <File Include="EditExitFormMgr.aspx">
+      <publishTime>07/06/2021 19:53:24</publishTime>
+    </File>
+    <File Include="ExitInterview_Dashboard.aspx">
+      <publishTime>07/06/2021 19:53:28</publishTime>
+    </File>
+    <File Include="Exit_Form.aspx">
+      <publishTime>07/06/2021 19:53:28</publishTime>
+    </File>
+    <File Include="Exit_Form.css">
+      <publishTime>03/05/2021 14:40:13</publishTime>
+    </File>
+    <File Include="Exit_Mgr_Dashboard.aspx">
+      <publishTime>07/06/2021 19:53:28</publishTime>
+    </File>
+    <File Include="Hiring_AttritionForm.aspx">
+      <publishTime>04/07/2022 17:02:23</publishTime>
+    </File>
+    <File Include="Hiring_HiringDashboard.aspx">
+      <publishTime>09/29/2021 16:34:52</publishTime>
+    </File>
+    <File Include="Hiring_HiringTeamView.aspx">
+      <publishTime>09/29/2021 16:51:59</publishTime>
+    </File>
+    <File Include="Hiring_ManagerDashboard.aspx">
+      <publishTime>09/29/2021 15:31:49</publishTime>
+    </File>
+    <File Include="Hiring_ManagerView.aspx">
+      <publishTime>09/29/2021 16:51:12</publishTime>
+    </File>
+    <File Include="Hiring_ProfileCreationDashboard.aspx">
+      <publishTime>07/12/2022 23:09:15</publishTime>
+    </File>
+    <File Include="Hiring_ScoringSheet.aspx">
+      <publishTime>07/14/2022 16:29:21</publishTime>
+    </File>
+    <File Include="Hiring_TrainingDashboard.aspx">
+      <publishTime>09/29/2021 16:42:05</publishTime>
+    </File>
+    <File Include="Hiring_TrainingTeamView.aspx">
+      <publishTime>09/29/2021 16:53:08</publishTime>
+    </File>
+    <File Include="Home.aspx">
+      <publishTime>08/26/2022 01:06:04</publishTime>
+    </File>
+    <File Include="Homepage.css">
+      <publishTime>03/16/2021 16:10:29</publishTime>
+    </File>
+    <File Include="HWAuditSheetQA.aspx">
+      <publishTime>05/15/2020 15:21:36</publishTime>
+    </File>
+    <File Include="HWAuditSheetTL.aspx">
+      <publishTime>04/15/2020 16:26:03</publishTime>
+    </File>
+    <File Include="HWAuditSheetUser.aspx">
+      <publishTime>04/15/2020 16:26:18</publishTime>
+    </File>
+    <File Include="HWAuditSheetUser.css">
+      <publishTime>08/06/2019 14:23:30</publishTime>
+    </File>
+    <File Include="HygieneCheckEditQA.aspx">
+      <publishTime>01/23/2023 15:57:54</publishTime>
+    </File>
+    <File Include="HygieneCheckQA.aspx">
+      <publishTime>08/17/2022 23:53:50</publishTime>
+    </File>
+    <File Include="HygieneCheckUser.aspx">
+      <publishTime>08/25/2022 20:45:06</publishTime>
+    </File>
+    <File Include="Hygiene_Check.aspx">
+      <publishTime>05/31/2023 15:15:23</publishTime>
+    </File>
+    <File Include="Hygiene_CheckUser.aspx">
+      <publishTime>10/12/2022 22:52:08</publishTime>
+    </File>
+    <File Include="Images/3.jpg">
+      <publishTime>01/25/2021 12:13:06</publishTime>
+    </File>
+    <File Include="Images/ChangePassword.jpg">
+      <publishTime>02/20/2019 19:21:10</publishTime>
+    </File>
+    <File Include="Images/Front-bg.jpg">
+      <publishTime>05/27/2019 15:27:48</publishTime>
+    </File>
+    <File Include="Images/Front-bg1.jpg">
+      <publishTime>02/01/2021 13:42:20</publishTime>
+    </File>
+    <File Include="Images/Front-bgd-logo.jpg">
+      <publishTime>03/16/2021 15:31:08</publishTime>
+    </File>
+    <File Include="Images/Front-bgd.jpg">
+      <publishTime>02/23/2021 10:36:59</publishTime>
+    </File>
+    <File Include="Images/guidelines.jpg">
+      <publishTime>01/27/2021 13:03:30</publishTime>
+    </File>
+    <File Include="Images/hd-plain-bg.jpg">
+      <publishTime>05/14/2019 16:18:25</publishTime>
+    </File>
+    <File Include="Images/HP BG image.png">
+      <publishTime>01/31/2019 20:00:59</publishTime>
+    </File>
+    <File Include="Images/HP Login.jpg">
+      <publishTime>04/16/2019 16:28:06</publishTime>
+    </File>
+    <File Include="Images/HP logoblack.png">
+      <publishTime>01/11/2012 12:59:56</publishTime>
+    </File>
+    <File Include="Images/HP logoblu.png">
+      <publishTime>01/30/2019 18:58:56</publishTime>
+    </File>
+    <File Include="Images/hp_logo_white.png">
+      <publishTime>01/28/2021 13:28:18</publishTime>
+    </File>
+    <File Include="Images/LegendSelect.jpg">
+      <publishTime>04/16/2019 16:20:12</publishTime>
+    </File>
+    <File Include="Images/LegendSelectbg.jpg">
+      <publishTime>02/23/2021 10:38:50</publishTime>
+    </File>
+    <File Include="Images/light-bg.jpg">
+      <publishTime>05/14/2019 16:33:39</publishTime>
+    </File>
+    <File Include="LegendHW.aspx">
+      <publishTime>05/15/2020 15:23:30</publishTime>
+    </File>
+    <File Include="LegendHW.css">
+      <publishTime>08/06/2019 14:21:32</publishTime>
+    </File>
+    <File Include="LegendSelect.aspx">
+      <publishTime>08/11/2022 23:35:39</publishTime>
+    </File>
+    <File Include="LegendSelect.css">
+      <publishTime>05/19/2021 16:47:04</publishTime>
+    </File>
+    <File Include="LegendSelectAgent.aspx">
+      <publishTime>08/11/2022 23:35:36</publishTime>
+    </File>
+    <File Include="LegendSelectAgent.css">
+      <publishTime>05/19/2021 16:47:07</publishTime>
+    </File>
+    <File Include="LegendSelectMgr.aspx">
+      <publishTime>09/26/2022 20:53:32</publishTime>
+    </File>
+    <File Include="LegendSelectMgr.css">
+      <publishTime>05/19/2021 16:47:10</publishTime>
+    </File>
+    <File Include="LegendSelectTL.aspx">
+      <publishTime>10/14/2020 19:19:44</publishTime>
+    </File>
+    <File Include="MgrDashboardADX.aspx">
+      <publishTime>07/06/2021 14:50:45</publishTime>
+    </File>
+    <File Include="MgrDashboardCDT.aspx">
+      <publishTime>09/20/2021 23:51:31</publishTime>
+    </File>
+    <File Include="MgrDashboardChat.aspx">
+      <publishTime>09/01/2021 00:51:02</publishTime>
+    </File>
+    <File Include="MgrDashboardDaaS.aspx">
+      <publishTime>07/29/2022 01:40:49</publishTime>
+    </File>
+    <File Include="MgrDashboardDOA.aspx">
+      <publishTime>09/20/2021 23:46:19</publishTime>
+    </File>
+    <File Include="MgrDashboardKCI.aspx">
+      <publishTime>05/19/2022 21:22:56</publishTime>
+    </File>
+    <File Include="MgrDashboardMPSEmail.aspx">
+      <publishTime>08/11/2022 14:45:42</publishTime>
+    </File>
+    <File Include="MgrDashboardOmnichannel.aspx">
+      <publishTime>08/02/2022 13:12:22</publishTime>
+    </File>
+    <File Include="MgrDashboardOnsitePURR.aspx">
+      <publishTime>06/22/2022 17:54:52</publishTime>
+    </File>
+    <File Include="MgrDashboardPDRA_RS_RC.aspx">
+      <publishTime>06/28/2022 19:05:00</publishTime>
+    </File>
+    <File Include="MgrDashboardSAPOS.aspx">
+      <publishTime>08/26/2021 14:31:24</publishTime>
+    </File>
+    <File Include="MgrDashboardSoMe.aspx">
+      <publishTime>06/01/2021 21:29:23</publishTime>
+    </File>
+    <File Include="MgrDashboardSwivel.aspx">
+      <publishTime>07/27/2022 17:54:35</publishTime>
+    </File>
+    <File Include="MgrDashboardTCO.aspx">
+      <publishTime>02/02/2022 19:39:14</publishTime>
+    </File>
+    <File Include="MgrDashboardTOC.aspx">
+      <publishTime>09/26/2022 16:44:50</publishTime>
+    </File>
+    <File Include="MgrDashboardVoice.aspx">
+      <publishTime>04/14/2022 16:58:19</publishTime>
+    </File>
+    <File Include="MgrLogin.aspx">
+      <publishTime>06/28/2022 14:11:19</publishTime>
+    </File>
+    <File Include="MgrLogin.css">
+      <publishTime>02/23/2021 12:24:15</publishTime>
+    </File>
+    <File Include="Mgr_Dashboard.aspx">
+      <publishTime>05/09/2019 14:10:11</publishTime>
+    </File>
+    <File Include="OL_Login.aspx">
+      <publishTime>06/28/2022 14:11:10</publishTime>
+    </File>
+    <File Include="OL_View.aspx">
+      <publishTime>03/11/2021 16:47:43</publishTime>
+    </File>
+    <File Include="OM_Login.aspx">
+      <publishTime>06/28/2022 14:11:02</publishTime>
+    </File>
+    <File Include="OM_View.aspx">
+      <publishTime>03/16/2021 16:18:36</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>05/03/2019 18:56:39</publishTime>
+    </File>
+    <File Include="PersonaLegendComm.aspx">
+      <publishTime>02/09/2021 18:27:54</publishTime>
+    </File>
+    <File Include="PersonaVoiceLegend.aspx">
+      <publishTime>05/26/2022 17:01:02</publishTime>
+    </File>
+    <File Include="PersonaVoiceLegend.css">
+      <publishTime>01/29/2021 18:28:12</publishTime>
+    </File>
+    <File Include="ProfileDetailForm.aspx">
+      <publishTime>07/25/2022 16:57:47</publishTime>
+    </File>
+    <File Include="ProfileDetailForm_Hiring.aspx">
+      <publishTime>07/15/2022 18:45:46</publishTime>
+    </File>
+    <File Include="QADashboard.aspx">
+      <publishTime>01/16/2020 19:43:19</publishTime>
+    </File>
+    <File Include="QADashboardADX.aspx">
+      <publishTime>04/06/2020 21:22:15</publishTime>
+    </File>
+    <File Include="QADashboardCEM.aspx">
+      <publishTime>11/27/2019 19:58:48</publishTime>
+    </File>
+    <File Include="QADashboardCO.aspx">
+      <publishTime>09/26/2019 19:21:22</publishTime>
+    </File>
+    <File Include="QADashboardComm.aspx">
+      <publishTime>08/05/2019 16:40:50</publishTime>
+    </File>
+    <File Include="QADashboardForums.aspx">
+      <publishTime>09/17/2019 18:11:32</publishTime>
+    </File>
+    <File Include="QADashboardFY21ADXLegend.aspx">
+      <publishTime>06/25/2021 12:56:42</publishTime>
+    </File>
+    <File Include="QADashboardFY21CDTLegend.aspx">
+      <publishTime>07/06/2021 20:18:22</publishTime>
+    </File>
+    <File Include="QADashboardFY21ChatLegend.aspx">
+      <publishTime>06/09/2022 18:29:34</publishTime>
+    </File>
+    <File Include="QADashboardFY21DOALegend.aspx">
+      <publishTime>09/20/2021 18:07:39</publishTime>
+    </File>
+    <File Include="QADashboardFY21Legend.aspx">
+      <publishTime>12/18/2020 14:14:32</publishTime>
+    </File>
+    <File Include="QADashboardFY21SAPOSLegend.aspx">
+      <publishTime>08/26/2021 03:09:00</publishTime>
+    </File>
+    <File Include="QADashboardFY21SoMeLegend.aspx">
+      <publishTime>06/25/2021 11:39:47</publishTime>
+    </File>
+    <File Include="QADashboardFY21VoiceLegend.aspx">
+      <publishTime>08/25/2022 00:43:21</publishTime>
+    </File>
+    <File Include="QADashboardFY22DaaSLegend.aspx">
+      <publishTime>07/28/2022 22:20:29</publishTime>
+    </File>
+    <File Include="QADashboardFY22KCILegend.aspx">
+      <publishTime>05/19/2022 01:51:00</publishTime>
+    </File>
+    <File Include="QADashboardFY22MPSEmailLegend.aspx">
+      <publishTime>08/10/2022 18:30:51</publishTime>
+    </File>
+    <File Include="QADashboardFY22OmnichannelLegend.aspx">
+      <publishTime>08/02/2022 13:02:24</publishTime>
+    </File>
+    <File Include="QADashboardFY22OnsitePURRLegend.aspx">
+      <publishTime>06/21/2022 14:08:25</publishTime>
+    </File>
+    <File Include="QADashboardFY22PDRA_RS_RCLegend.aspx">
+      <publishTime>06/27/2022 18:08:19</publishTime>
+    </File>
+    <File Include="QADashboardFY22SwivelLegend.aspx">
+      <publishTime>07/27/2022 01:42:24</publishTime>
+    </File>
+    <File Include="QADashboardFY22TCOLegend.aspx">
+      <publishTime>01/31/2022 18:59:07</publishTime>
+    </File>
+    <File Include="QADashboardHW.aspx">
+      <publishTime>08/05/2019 16:41:32</publishTime>
+    </File>
+    <File Include="QADashboardHygieneCheck.aspx">
+      <publishTime>09/13/2022 16:44:00</publishTime>
+    </File>
+    <File Include="QADashboardRR.aspx">
+      <publishTime>10/10/2019 15:56:05</publishTime>
+    </File>
+    <File Include="QADashboardSF.aspx">
+      <publishTime>04/20/2020 18:10:33</publishTime>
+    </File>
+    <File Include="QADashboardSoMe.aspx">
+      <publishTime>08/29/2019 17:09:33</publishTime>
+    </File>
+    <File Include="QADashboardTOC.aspx">
+      <publishTime>10/14/2020 20:16:00</publishTime>
+    </File>
+    <File Include="QALogin.aspx">
+      <publishTime>06/28/2022 14:10:55</publishTime>
+    </File>
+    <File Include="QALogin.css">
+      <publishTime>03/16/2021 16:17:08</publishTime>
+    </File>
+    <File Include="QATrendViewVoiceLegend.aspx">
+      <publishTime>07/29/2021 11:48:21</publishTime>
+    </File>
+    <File Include="RioRanchoLegend.aspx">
+      <publishTime>02/09/2021 18:32:07</publishTime>
+    </File>
+    <File Include="scripts/ai.0.22.9-build00167.js">
+      <publishTime>12/24/2018 21:35:47</publishTime>
+    </File>
+    <File Include="scripts/ai.0.22.9-build00167.min.js">
+      <publishTime>12/24/2018 21:35:47</publishTime>
+    </File>
+    <File Include="scripts/GoogleChart.js">
+      <publishTime>05/03/2019 20:55:17</publishTime>
+    </File>
+    <File Include="Service References/Application Insights/ConnectedService.json">
+      <publishTime>12/24/2018 21:35:57</publishTime>
+    </File>
+    <File Include="SmartFriendLegend.aspx">
+      <publishTime>11/02/2020 19:44:19</publishTime>
+    </File>
+    <File Include="SoMeFbTwLegend.aspx">
+      <publishTime>02/09/2021 18:30:38</publishTime>
+    </File>
+    <File Include="SoMeForumLegend.aspx">
+      <publishTime>02/09/2021 18:30:53</publishTime>
+    </File>
+    <File Include="Testing.aspx">
+      <publishTime>02/10/2022 16:44:40</publishTime>
+    </File>
+    <File Include="TLDashboard.aspx">
+      <publishTime>10/29/2019 16:19:56</publishTime>
+    </File>
+    <File Include="TLDashboard.css">
+      <publishTime>05/16/2019 18:52:05</publishTime>
+    </File>
+    <File Include="TLDashboardComm.aspx">
+      <publishTime>07/26/2019 18:23:46</publishTime>
+    </File>
+    <File Include="TLDashboardCoreOps.aspx">
+      <publishTime>10/30/2019 13:24:25</publishTime>
+    </File>
+    <File Include="TLDashboardForum.aspx">
+      <publishTime>10/29/2019 19:53:56</publishTime>
+    </File>
+    <File Include="TLDashboardHW.aspx">
+      <publishTime>07/26/2019 18:03:09</publishTime>
+    </File>
+    <File Include="TLDashboardHW.css">
+      <publishTime>07/03/2019 17:20:19</publishTime>
+    </File>
+    <File Include="TLDashboardRioRancho.aspx">
+      <publishTime>10/31/2019 16:54:35</publishTime>
+    </File>
+    <File Include="TLDashboardSoMe.aspx">
+      <publishTime>10/29/2019 16:19:29</publishTime>
+    </File>
+    <File Include="TLLogin.aspx">
+      <publishTime>01/16/2020 19:37:59</publishTime>
+    </File>
+    <File Include="TL_Dashboard.aspx">
+      <publishTime>01/22/2020 20:54:20</publishTime>
+    </File>
+    <File Include="TL_DashboardADX.aspx">
+      <publishTime>04/06/2020 22:28:12</publishTime>
+    </File>
+    <File Include="TL_DashboardCEM.aspx">
+      <publishTime>02/03/2020 15:52:41</publishTime>
+    </File>
+    <File Include="TL_DashboardComm.aspx">
+      <publishTime>02/10/2020 16:40:48</publishTime>
+    </File>
+    <File Include="TL_DashboardCoreOps.aspx">
+      <publishTime>01/21/2020 20:39:35</publishTime>
+    </File>
+    <File Include="TL_DashboardForum.aspx">
+      <publishTime>03/24/2020 17:41:58</publishTime>
+    </File>
+    <File Include="TL_DashboardHW.aspx">
+      <publishTime>01/21/2020 21:04:59</publishTime>
+    </File>
+    <File Include="TL_DashboardRioRancho.aspx">
+      <publishTime>01/22/2020 18:01:22</publishTime>
+    </File>
+    <File Include="TL_DashboardSF.aspx">
+      <publishTime>04/20/2020 21:26:51</publishTime>
+    </File>
+    <File Include="TL_DashboardSoMe.aspx">
+      <publishTime>03/24/2020 17:41:36</publishTime>
+    </File>
+    <File Include="TL_DashboardTOC.aspx">
+      <publishTime>10/14/2020 22:41:27</publishTime>
+    </File>
+    <File Include="TOC_Legend.aspx">
+      <publishTime>11/24/2022 17:51:31</publishTime>
+    </File>
+    <File Include="TOC_LegendGL.aspx">
+      <publishTime>09/26/2022 20:49:13</publishTime>
+    </File>
+    <File Include="TrainerLogin.aspx">
+      <publishTime>05/13/2020 22:20:31</publishTime>
+    </File>
+    <File Include="TrainingDashboardNH.aspx">
+      <publishTime>06/01/2020 20:54:23</publishTime>
+    </File>
+    <File Include="TrainingSheetNH.aspx">
+      <publishTime>09/25/2020 20:28:23</publishTime>
+    </File>
+    <File Include="TrainingType1.aspx">
+      <publishTime>09/25/2020 20:26:36</publishTime>
+    </File>
+    <File Include="TrainingType2.aspx">
+      <publishTime>09/16/2020 21:27:55</publishTime>
+    </File>
+    <File Include="TypeSelect.aspx">
+      <publishTime>05/27/2020 00:24:54</publishTime>
+    </File>
+    <File Include="UniversalConsLegend.aspx">
+      <publishTime>08/19/2019 17:45:34</publishTime>
+    </File>
+    <File Include="UserDashboard.aspx">
+      <publishTime>05/15/2020 20:59:18</publishTime>
+    </File>
+    <File Include="UserDashboard.css">
+      <publishTime>06/25/2021 13:38:59</publishTime>
+    </File>
+    <File Include="UserDashboardADX.aspx">
+      <publishTime>04/06/2020 22:10:01</publishTime>
+    </File>
+    <File Include="UserDashboardCEM.aspx">
+      <publishTime>11/29/2019 21:36:33</publishTime>
+    </File>
+    <File Include="UserDashboardCO.aspx">
+      <publishTime>05/15/2020 21:01:33</publishTime>
+    </File>
+    <File Include="UserDashboardComm.aspx">
+      <publishTime>07/24/2019 15:08:27</publishTime>
+    </File>
+    <File Include="UserDashboardForums.aspx">
+      <publishTime>09/18/2019 22:42:09</publishTime>
+    </File>
+    <File Include="UserDashboardFY21ADX.aspx">
+      <publishTime>03/08/2021 16:12:19</publishTime>
+    </File>
+    <File Include="UserDashboardFY21CDT.aspx">
+      <publishTime>07/05/2021 20:24:48</publishTime>
+    </File>
+    <File Include="UserDashboardFY21Chat.aspx">
+      <publishTime>09/01/2021 00:55:40</publishTime>
+    </File>
+    <File Include="UserDashboardFY21DOA.aspx">
+      <publishTime>09/20/2021 23:24:29</publishTime>
+    </File>
+    <File Include="UserDashboardFY21SAPOS.aspx">
+      <publishTime>08/26/2021 13:23:03</publishTime>
+    </File>
+    <File Include="UserDashboardFY21SoMe.aspx">
+      <publishTime>06/01/2021 21:27:29</publishTime>
+    </File>
+    <File Include="UserDashboardFY21Voice.aspx">
+      <publishTime>06/09/2022 18:08:06</publishTime>
+    </File>
+    <File Include="UserDashboardFY22DaaS.aspx">
+      <publishTime>07/29/2022 01:44:39</publishTime>
+    </File>
+    <File Include="UserDashboardFY22KCI.aspx">
+      <publishTime>05/19/2022 19:31:33</publishTime>
+    </File>
+    <File Include="UserDashboardFY22MPSEmail.aspx">
+      <publishTime>08/11/2022 14:41:11</publishTime>
+    </File>
+    <File Include="UserDashboardFY22Omnichannel.aspx">
+      <publishTime>08/02/2022 13:15:10</publishTime>
+    </File>
+    <File Include="UserDashboardFY22OnsitePURRLegend.aspx">
+      <publishTime>06/22/2022 17:27:33</publishTime>
+    </File>
+    <File Include="UserDashboardFY22PDRA_RS_RC.aspx">
+      <publishTime>06/28/2022 18:44:22</publishTime>
+    </File>
+    <File Include="UserDashboardFY22Swivel.aspx">
+      <publishTime>07/27/2022 14:30:10</publishTime>
+    </File>
+    <File Include="UserDashboardFY22TCO.aspx">
+      <publishTime>02/02/2022 19:49:47</publishTime>
+    </File>
+    <File Include="UserDashboardHW.aspx">
+      <publishTime>09/19/2019 17:38:50</publishTime>
+    </File>
+    <File Include="UserDashboardHygieneCheck.aspx">
+      <publishTime>08/26/2022 16:51:46</publishTime>
+    </File>
+    <File Include="UserDashboardRR.aspx">
+      <publishTime>10/10/2019 16:19:10</publishTime>
+    </File>
+    <File Include="UserDashboardSF.aspx">
+      <publishTime>04/20/2020 20:15:00</publishTime>
+    </File>
+    <File Include="UserDashboardSoMe.aspx">
+      <publishTime>08/29/2019 22:40:43</publishTime>
+    </File>
+    <File Include="UserDashboardTOC.aspx">
+      <publishTime>10/14/2020 22:03:59</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>07/26/2023 15:38:50</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

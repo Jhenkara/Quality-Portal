@@ -1,0 +1,119 @@
+﻿html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -ms-overflow-style:none;
+    -webkit-tap-highlight-color:transparent;
+}
+
+body {
+    background-image: url("Images/Front-bgd-logo.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;background-size:100% 100%;
+}
+
+#LoginDiv{
+    border-radius:50px;
+    margin-left:250px;
+    margin-top:90px;
+    padding:50px;
+    width:500px;
+    background:rgba(0,0,0,0.3);
+}
+
+.navbar-brand {
+    display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 2rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+
+.validation{
+    color:#ff0c00;
+}
+
+#btnLogin{
+  padding: 12px 15px;
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #0e83d6;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 9px 0 #999;
+  position:center;
+}
+
+#btnLogin:hover {background-color: #3e8e41}
+
+#btnLogin:active {
+  background-color: #3e8e41;
+  box-shadow: 5px 0 #666;
+  transform: translateX(4px);
+}
+
+.textformat{
+    color:steelblue;
+    font-weight:bold;
+    font-size:larger;
+}
+
+#tbUsername:focus::-webkit-input-placeholder{
+    opacity:0;
+}
+
+#tbPassword:focus::-webkit-input-placeholder{
+    opacity:0;
+}
+
+/*Home Label*/
+#homelabel{
+  text-align: center;
+  vertical-align:middle;
+  line-height:40px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  margin-top:40px;
+  padding: 0;
+  height:70px;
+  overflow:visible;
+  background:rgba(0,0,0,0.6);
+}
+
+li {
+  float: left;
+  margin-left:30px;
+  text-align: center;
+}
+
+li a, .dropbtn {
+  display: block;
+  color: white;
+  text-align: center;
+  height:70px;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size:larger;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #0e83d6;
+  text-decoration: none;
+  display: block;
+  color: white;
+  }
+
+
+li.dropdown {
+    position:relative;
+  display: inline-block;
+}

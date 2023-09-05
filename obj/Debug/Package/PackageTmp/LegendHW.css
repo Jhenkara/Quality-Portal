@@ -1,0 +1,136 @@
+﻿body {
+    display:block;
+}
+
+#table1 th{
+    width:40%;
+    border-collapse:collapse;
+}
+
+#table2 th{
+    text-align:left;
+}
+
+#TextBox4:focus::-webkit-input-placeholder{
+    opacity:0;
+}
+
+td{
+    margin-left:20px;
+    text-align:left;
+    padding:2px;
+}
+
+.header img {
+  float: left;
+  width: 60px;
+  height: 60px;
+  background: #555;
+}
+
+.header h1 {
+  position: relative;
+  top: 18px;
+  left: 10px;
+}
+
+.btnsub {
+  padding: 12px 15px;
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #0e83d6;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 9px 0 #999;
+  position:center;
+}
+
+.btnsub:hover {background-color: #3e8e41}
+
+.btnsub:active {
+  background-color: #3e8e41;
+  box-shadow: 5px 0 #666;
+  transform: translateX(4px);
+}
+.tablecontents{
+    max-width:90%;
+    margin:auto;
+    text-align:center;
+    margin-top:20px;
+    float:left;
+    font-size:small;
+}
+
+ #btnLogout {
+  margin-left:15px;
+  padding: 12px 15px;
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #0e83d6;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  width: 120px;
+}
+
+#btnLogout:hover {background-color: #f4511e}
+
+#btnLogout:active {
+  background-color: #ff0000;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#Download{
+    
+  margin-left:15px;
+  padding: 12px 15px;
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #0e83d6;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  width: 120px;
+}
+
+#Download:hover {background-color: #f4511e}
+
+#Download:active {
+  background-color: #ff0000;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#QADashboard{
+    
+  margin-left:15px;
+  padding: 12px 15px;
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #0e83d6;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  width: 130px;
+}
+
+#QADashboard:hover {background-color: #f4511e}
+
+#QADashboard:active {
+  background-color: #ff0000;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}

@@ -1,0 +1,44 @@
+C:\Users\rnik\Documents\Visual Studio 2015\Projects\Audit Legends\Audit Legends\bin\ApplicationInsights.config
+C:\Users\rnik\Documents\Visual Studio 2015\Projects\Audit Legends\Audit Legends\bin\roslyn\csc.exe
+C:\Users\rnik\Documents\Visual Studio 2015\Projects\Audit Legends\Audit Legends\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\rnik\Documents\Visual Studio 2015\Projects\Audit Legends\Audit Legends\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\rnik\Documents\Visual Studio 2015\Projects\Audit Legends\Audit Legends\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\rnik\Documents\Visual Studio 2015\Projects\Audit Legends\Audit Legends\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\rnik\Documents\Visual Studio 2015\Projects\Audit Legends\Audit Legends\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\rnik\Documents\Visual Studio 2015\Projects\Audit Legends\Audit Legends\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\rnik\Documents\Visual Studio 2015\Projects\Audit Legends\Audit Legends\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\rnik\Documents\Visual Studio 2015\Projects\Audit Legends\Audit Legends\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\rnik\Documents\Visual Studio 2015\Projects\Audit Legends\Audit Legends\bin\roslyn\vbc.exe
+C:\Users\rnik\Documents\Visual Studio 2015\Projects\Audit Legends\Audit Legends\bin\roslyn\VBCSCompiler.exe
+C:\Users\rnik\Documents\Visual Studio 2015\Projects\Audit Legends\Audit Legends\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\rnik\Documents\Visual Studio 2015\Projects\Audit Legends\Audit Legends\bin\Audit Legends.dll.config
+C:\Users\rnik\Documents\Visual Studio 2015\Projects\Audit Legends\Audit Legends\bin\Audit Legends.dll
+C:\Users\rnik\Documents\Visual Studio 2015\Projects\Audit Legends\Audit Legends\bin\Audit Legends.pdb
+C:\Users\rnik\Documents\Visual Studio 2015\Projects\Audit Legends\Audit Legends\bin\EntityFramework.dll
+C:\Users\rnik\Documents\Visual Studio 2015\Projects\Audit Legends\Audit Legends\bin\EntityFramework.SqlServer.dll
+C:\Users\rnik\Documents\Visual Studio 2015\Projects\Audit Legends\Audit Legends\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\rnik\Documents\Visual Studio 2015\Projects\Audit Legends\Audit Legends\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\rnik\Documents\Visual Studio 2015\Projects\Audit Legends\Audit Legends\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\rnik\Documents\Visual Studio 2015\Projects\Audit Legends\Audit Legends\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\rnik\Documents\Visual Studio 2015\Projects\Audit Legends\Audit Legends\bin\Microsoft.AI.Web.dll
+C:\Users\rnik\Documents\Visual Studio 2015\Projects\Audit Legends\Audit Legends\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\rnik\Documents\Visual Studio 2015\Projects\Audit Legends\Audit Legends\bin\Microsoft.ApplicationInsights.dll
+C:\Users\rnik\Documents\Visual Studio 2015\Projects\Audit Legends\Audit Legends\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\rnik\Documents\Visual Studio 2015\Projects\Audit Legends\Audit Legends\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Users\rnik\Documents\Visual Studio 2015\Projects\Audit Legends\Audit Legends\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\Users\rnik\Documents\Visual Studio 2015\Projects\Audit Legends\Audit Legends\bin\Microsoft.Practices.EnterpriseLibrary.Validation.dll
+C:\Users\rnik\Documents\Visual Studio 2015\Projects\Audit Legends\Audit Legends\bin\Microsoft.Practices.ObjectBuilder.dll
+C:\Users\rnik\Documents\Visual Studio 2015\Projects\Audit Legends\Audit Legends\bin\EntityFramework.xml
+C:\Users\rnik\Documents\Visual Studio 2015\Projects\Audit Legends\Audit Legends\bin\EntityFramework.SqlServer.xml
+C:\Users\rnik\Documents\Visual Studio 2015\Projects\Audit Legends\Audit Legends\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\rnik\Documents\Visual Studio 2015\Projects\Audit Legends\Audit Legends\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\rnik\Documents\Visual Studio 2015\Projects\Audit Legends\Audit Legends\bin\Microsoft.AI.Web.xml
+C:\Users\rnik\Documents\Visual Studio 2015\Projects\Audit Legends\Audit Legends\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\rnik\Documents\Visual Studio 2015\Projects\Audit Legends\Audit Legends\bin\Microsoft.ApplicationInsights.xml
+C:\Users\rnik\Documents\Visual Studio 2015\Projects\Audit Legends\Audit Legends\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\rnik\Documents\Visual Studio 2015\Projects\Audit Legends\Audit Legends\obj\Debug\Audit Legends.csprojAssemblyReference.cache
+C:\Users\rnik\Documents\Visual Studio 2015\Projects\Audit Legends\Audit Legends\obj\Debug\Audit Legends.csproj.ResolveComReference.cache
+C:\Users\rnik\Documents\Visual Studio 2015\Projects\Audit Legends\Audit Legends\obj\Debug\Audit Legends.csproj.CoreCompileInputs.cache
+C:\Users\rnik\Documents\Visual Studio 2015\Projects\Audit Legends\Audit Legends\obj\Debug\Audit Legends.csproj.CopyComplete
+C:\Users\rnik\Documents\Visual Studio 2015\Projects\Audit Legends\Audit Legends\obj\Debug\Audit Legends.dll
+C:\Users\rnik\Documents\Visual Studio 2015\Projects\Audit Legends\Audit Legends\obj\Debug\Audit Legends.pdb

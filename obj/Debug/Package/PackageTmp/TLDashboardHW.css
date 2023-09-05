@@ -1,0 +1,55 @@
+﻿body {
+    background-image: url("Images/light-bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;background-size:100% 100%;
+}
+
+/*Home Label*/
+#homebar{
+  text-align: center;
+  vertical-align:middle;
+  line-height:40px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  margin-top:40px;
+  padding: 0;
+  height:70px;
+  overflow:visible;
+  background:rgba(0,0,0,0.6);
+}
+
+li {
+  float: left;
+  margin-left:30px;
+  text-align: center;
+}
+
+li a, .dropbtn {
+  display: block;
+  color: white;
+  text-align: center;
+  height:70px;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size:larger;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #0e83d6;
+  text-decoration: none;
+  display: block;
+  color: white;
+  }
+
+
+li.dropdown {
+    position:relative;
+  display: inline-block;
+}
+
+/*Charts*/
+#Table1{
+}

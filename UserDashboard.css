@@ -1,0 +1,141 @@
+﻿html, body {
+    font-family: 'HP Simplified';
+}
+
+#homelabel{
+  text-align: center;
+  vertical-align:middle;
+  line-height:40px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  margin-top:40px;
+  padding: 0;
+  height:70px;
+  overflow:visible;
+  background:rgba(0,0,0,0.6);
+}
+
+li {
+  float: left;
+  margin-left:30px;
+  text-align: center;
+}
+
+li a, .dropbtn {
+  display: block;
+  color: white;
+  text-align: center;
+  height:70px;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size:larger;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #0e83d6;
+  text-decoration: none;
+  display: block;
+  color: white;
+  }
+
+
+li.dropdown {
+    position:relative;
+  display: inline-block;
+}
+
+.rounded_corners
+    {   
+        border: 1px inset #ffffff;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        border-radius: 10px;
+        overflow:hidden;
+    }
+    .rounded_corners td, .rounded_corners th
+    {
+        border: 1px inset #ffffff;
+        font-family: Arial;
+        font-size: 10pt;
+        text-align: center;
+    }
+    .rounded_corners table table td
+    {
+        border: 1px inset #ffffff;
+        border-style: none;
+        text-align: center;
+    }
+
+.MenuButtons {
+    margin-left: 15px;
+    padding: 5px 12px;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #1f6cb5;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    width: 120px;
+}
+
+    .MenuButtons:hover {
+        background-color: #f4511e
+    }
+
+    .MenuButtons:active {
+        background-color: #ff0000;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+    }
+
+.hmbtn {
+    background-color: DodgerBlue; /* Blue background */
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 15px 24px; /* Some padding */
+    font-size: 16px; /* Set a font size */
+    cursor: pointer; /* Mouse pointer on hover */
+}
+
+/* Darker background on mouse-over */
+.hmbtn:hover {
+    background-color: white;
+    color:DodgerBlue;
+    font-size: 16px;
+    font-style:italic;
+}
+
+#ReqCount{
+    color:green;
+    font-size: 16px;
+    font-style:italic;
+}
+
+ #btnLogout {
+  margin-left:15px;
+  padding: 12px 15px;
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #0e83d6;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  width: 120px;
+}
+
+#btnLogout:hover {background-color: #f4511e}
+
+#btnLogout:active {
+  background-color: #ff0000;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}

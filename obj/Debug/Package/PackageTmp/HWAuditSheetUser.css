@@ -1,0 +1,115 @@
+﻿body {
+    display:block;
+}
+
+#table1 th{
+    width:40%;
+    border-collapse:collapse;
+}
+
+#table2 th{
+    text-align:left;
+}
+
+#TextBox4:focus::-webkit-input-placeholder{
+    opacity:0;
+}
+
+td{
+    margin-left:20px;
+    text-align:left;
+    padding:2px;
+}
+
+.header img {
+  float: left;
+  width: 60px;
+  height: 60px;
+  background: #555;
+}
+
+.header h1 {
+  position: relative;
+  top: 18px;
+  left: 10px;
+}
+
+.btnAcp {
+  padding: 15px 18px;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #0e83d6;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 9px 0 #999;
+  position:center;
+}
+
+.btnAcp:hover {background-color: #308721}
+
+.btnAcp:active {
+  background-color: #308721;
+  box-shadow: 5px 0 #666;
+  transform: translateY();
+}
+
+.btnDisp {
+  padding: 15px 18px;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #0e83d6;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 9px 0 #999;
+  position:center;
+}
+
+.btnDisp:hover {background-color: #ad1b05}
+
+.btnDisp:active {
+        background-color: #ad1b05;
+        box-shadow: 5px 0 #666;
+        transform: translateY();
+}
+
+.tablecontents{
+    max-width:90%;
+    margin:auto;
+    text-align:center;
+    margin-top:20px;
+    float:left;
+    font-size:small;
+}
+
+ #btnLogout {
+  margin-left:15px;
+  padding: 12px 15px;
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #0e83d6;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  width: 120px;
+}
+
+#btnLogout:hover {background-color: #f4511e}
+
+#btnLogout:active {
+  background-color: #ff0000;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.validation{
+    color:#ff0c00;
+}

@@ -1,0 +1,100 @@
+﻿body {
+    background-image: url("Images/LegendSelectbg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;background-size:100% 100%;
+  text-align:center;
+}
+
+/*Home Label*/
+#homelabel{
+  text-align: center;
+  vertical-align:middle;
+  line-height:40px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  margin-top:40px;
+  padding: 0;
+  height:70px;
+  overflow:visible;
+  background:rgba(0,0,0,0.6);
+}
+
+li {
+  float: left;
+  margin-left:30px;
+  text-align: center;
+}
+
+li a, .dropbtn {
+  display: block;
+  color: white;
+  text-align: center;
+  height:70px;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size:larger;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #0e83d6;
+  text-decoration: none;
+  display: block;
+  color: white;
+  }
+
+
+li.dropdown {
+    position:relative;
+  display: inline-block;
+}
+
+/*Button Design*/
+
+.SelectButtons{
+  padding: 12px 15px;
+  font-size: 13px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #0e83d6;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 9px 0 #999;
+  position:center;
+}
+
+.SelectButtons:hover {background-color: #3e8e41}
+
+.SelectButtons:active {
+  background-color: #3e8e41;
+  box-shadow: 5px 0 #666;
+  transform: translateX(4px);
+}
+
+.SelectButtonsNew {
+    padding: 15px 19px;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #0095ff;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 9px 0 #999;
+    position: center;
+}
+
+    .SelectButtonsNew:hover {
+        background-color: #3e8e41
+    }
+
+    .SelectButtonsNew:active {
+        background-color: #3e8e41;
+        box-shadow: 5px 0 #666;
+        transform: translateX(4px);
+    }
